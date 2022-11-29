@@ -125,7 +125,7 @@ for idx in tqdm(range(len(SM_pars_new))):
     s.write("###################################                                   \n")
     s.write("## INFORMATION FOR CW1                                                \n")
     s.write("###################################                                   \n")
-    s.write("Bidxk cw1                                                             \n")
+    s.write("Block cw1                                                             \n")
     s.write("    1   1 {} # rCW111                                                 \n".format(CW11.real)) 
     s.write("    1   2 {} # rCW112                                                 \n".format(CW12.real)) 
     s.write("    1   3 {} # rCW113                                                 \n".format(CW13.real)) 
