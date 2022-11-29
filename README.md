@@ -7,6 +7,6 @@ Codes and data for the LQ collider research project, which corresponds to the pa
 
 **SARAH** Contains the SARAH implementation of the model. Can be used for some analytical calculations as well as to generate files for other opensource HEP codes
 
-**MadGraph codes** Auxiliary python code for contructing MadGraph parameter cards as well as a python interface with MadGraph to generate events
+**MadGraph_codes** Auxiliary python code for contructing MadGraph parameter cards as well as a python interface with MadGraph to generate events
 
 For additional information or questions, feel free to contact me by email (jpedropino@ua.pt or johnppg5@gmail.com)
