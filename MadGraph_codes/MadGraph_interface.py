@@ -185,7 +185,7 @@ for idx in range(N):
         if j.__contains__('Integrated'):    
                 for word in j.split():
                     try:
-                        xsec_TChannel = float(word)*1e3
+                        xsec_GluonSplit = float(word)*1e3
                     except ValueError:
                         pass
                     
