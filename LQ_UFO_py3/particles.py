@@ -3,7 +3,7 @@
 # SARAH References: arXiv:0806.0538, arXiv:0909.2863, arXiv:1002.0840    
 # (c) Florian Staub, 2011  
 # ----------------------------------------------------------------------  
-# File created at 15:13 on 25.11.2022   
+# File created at 14:5 on 30.11.2022   
 # ----------------------------------------------------------------------  
  
  
@@ -259,12 +259,12 @@ S1 = Particle(pdg_code =999014,
 	 name = 'S1' ,
 	 antiname = 'S1c' ,
 	 spin = 1 ,
-	 color = -3 ,
+	 color = 3 ,
 	 mass = Param.MS1 ,
 	 width = Param.WS1 ,
 	 GhostNumber = 0, 
 	 line = 'dashed' ,
-	 charge = 1/3 ,
+	 charge = -1/3 ,
 	 texname = 'S1' ,
 	 antitexname = 'S1c' ) 
  
@@ -275,12 +275,12 @@ S2 = Particle(pdg_code =999024,
 	 name = 'S2' ,
 	 antiname = 'S2c' ,
 	 spin = 1 ,
-	 color = -3 ,
+	 color = 3 ,
 	 mass = Param.MS2 ,
 	 width = Param.WS2 ,
 	 GhostNumber = 0, 
 	 line = 'dashed' ,
-	 charge = 1/3 ,
+	 charge = -1/3 ,
 	 texname = 'S2' ,
 	 antitexname = 'S2c' ) 
  

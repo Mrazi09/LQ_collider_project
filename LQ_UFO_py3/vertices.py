@@ -3,7 +3,7 @@
 # SARAH References: arXiv:0806.0538, 0909.2863, 1002.0840, 1207.0906, 1309.7223   
 # (c) Florian Staub, 2013  
 # -------------------------------------------------------------------------------  
-# File created at 15:13 on 25.11.2022   
+# File created at 14:05 on 30.11.2022   
 # ----------------------------------------------------------------------  
  
  
@@ -98,42 +98,42 @@ V_12 = Vertex(name = 'V_12',
  
  
 V_13 = Vertex(name = 'V_13', 
-	 particles = [P.Hp, P.Rc, P.S1c], 
+	 particles = [P.Hp, P.S1, P.Rc], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.SSS1], 
 	 couplings = {(0,0):C.GC_13}) 
  
  
 V_14 = Vertex(name = 'V_14', 
-	 particles = [P.Hp, P.Rc, P.S2c], 
+	 particles = [P.Hp, P.S2, P.Rc], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.SSS1], 
 	 couplings = {(0,0):C.GC_14}) 
  
  
 V_15 = Vertex(name = 'V_15', 
-	 particles = [P.R, P.S1, P.Hpc], 
-	 color = ['Identity(1,2)'], 
+	 particles = [P.R, P.S1, P.S2], 
+	 color = ['Epsilon(1,2,3)'], 
 	 lorentz = [L.SSS1], 
 	 couplings = {(0,0):C.GC_15}) 
  
  
 V_16 = Vertex(name = 'V_16', 
-	 particles = [P.R, P.S2, P.Hpc], 
-	 color = ['Identity(1,2)'], 
+	 particles = [P.R, P.Hpc, P.S1c], 
+	 color = ['Identity(1,3)'], 
 	 lorentz = [L.SSS1], 
 	 couplings = {(0,0):C.GC_16}) 
  
  
 V_17 = Vertex(name = 'V_17', 
-	 particles = [P.R, P.S1c, P.S2c], 
-	 color = ['EpsilonBar(1,2,3)'], 
+	 particles = [P.R, P.Hpc, P.S2c], 
+	 color = ['Identity(1,3)'], 
 	 lorentz = [L.SSS1], 
 	 couplings = {(0,0):C.GC_17}) 
  
  
 V_18 = Vertex(name = 'V_18', 
-	 particles = [P.S1, P.S2, P.Rc], 
+	 particles = [P.Rc, P.S1c, P.S2c], 
 	 color = ['EpsilonBar(1,2,3)'], 
 	 lorentz = [L.SSS1], 
 	 couplings = {(0,0):C.GC_18}) 
@@ -252,77 +252,77 @@ V_34 = Vertex(name = 'V_34',
  
  
 V_35 = Vertex(name = 'V_35', 
-	 particles = [P.R, P.S1, P.g, P.Wm], 
-	 color = ['T(3,1,2)'], 
+	 particles = [P.R, P.Rc, P.g, P.g], 
+	 color = ['T(3,-1,2)*T(4,1,-1)', 'T(3,1,-1)*T(4,-1,2)'], 
 	 lorentz = [L.SSVV1], 
-	 couplings = {(0,0):C.GC_35}) 
+	 couplings = {(0,0):C.GC_35,(1,0):C.GC_36}) 
  
  
 V_36 = Vertex(name = 'V_36', 
-	 particles = [P.R, P.S2, P.g, P.Wm], 
+	 particles = [P.R, P.Rc, P.g, P.A], 
 	 color = ['T(3,1,2)'], 
-	 lorentz = [L.SSVV1], 
-	 couplings = {(0,0):C.GC_36}) 
- 
- 
-V_37 = Vertex(name = 'V_37', 
-	 particles = [P.R, P.S1, P.A, P.Wm], 
-	 color = ['Identity(1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_37}) 
  
  
-V_38 = Vertex(name = 'V_38', 
-	 particles = [P.R, P.S2, P.A, P.Wm], 
-	 color = ['Identity(1,2)'], 
+V_37 = Vertex(name = 'V_37', 
+	 particles = [P.R, P.S1c, P.g, P.Wm], 
+	 color = ['T(3,1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_38}) 
  
  
-V_39 = Vertex(name = 'V_39', 
-	 particles = [P.R, P.S1, P.Wm, P.Z], 
-	 color = ['Identity(1,2)'], 
+V_38 = Vertex(name = 'V_38', 
+	 particles = [P.R, P.S2c, P.g, P.Wm], 
+	 color = ['T(3,1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_39}) 
  
  
-V_40 = Vertex(name = 'V_40', 
-	 particles = [P.R, P.S2, P.Wm, P.Z], 
-	 color = ['Identity(1,2)'], 
+V_39 = Vertex(name = 'V_39', 
+	 particles = [P.R, P.Rc, P.g, P.Z], 
+	 color = ['T(3,1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_40}) 
  
  
-V_41 = Vertex(name = 'V_41', 
-	 particles = [P.R, P.Rc, P.g, P.g], 
-	 color = ['T(3,-1,2)*T(4,1,-1)', 'T(3,1,-1)*T(4,-1,2)'], 
+V_40 = Vertex(name = 'V_40', 
+	 particles = [P.R, P.Rc, P.A, P.A], 
+	 color = ['Identity(1,2)'], 
 	 lorentz = [L.SSVV1], 
-	 couplings = {(0,0):C.GC_41,(1,0):C.GC_42}) 
+	 couplings = {(0,0):C.GC_41}) 
+ 
+ 
+V_41 = Vertex(name = 'V_41', 
+	 particles = [P.R, P.S1c, P.A, P.Wm], 
+	 color = ['Identity(1,2)'], 
+	 lorentz = [L.SSVV1], 
+	 couplings = {(0,0):C.GC_42}) 
  
  
 V_42 = Vertex(name = 'V_42', 
-	 particles = [P.R, P.Rc, P.g, P.A], 
-	 color = ['T(3,1,2)'], 
+	 particles = [P.R, P.S2c, P.A, P.Wm], 
+	 color = ['Identity(1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_43}) 
  
  
 V_43 = Vertex(name = 'V_43', 
-	 particles = [P.R, P.Rc, P.g, P.Z], 
-	 color = ['T(3,1,2)'], 
+	 particles = [P.R, P.Rc, P.A, P.Z], 
+	 color = ['Identity(1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_44}) 
  
  
 V_44 = Vertex(name = 'V_44', 
-	 particles = [P.R, P.Rc, P.A, P.A], 
+	 particles = [P.R, P.S1c, P.Wm, P.Z], 
 	 color = ['Identity(1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_45}) 
  
  
 V_45 = Vertex(name = 'V_45', 
-	 particles = [P.R, P.Rc, P.A, P.Z], 
+	 particles = [P.R, P.S2c, P.Wm, P.Z], 
 	 color = ['Identity(1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_46}) 
@@ -344,237 +344,237 @@ V_47 = Vertex(name = 'V_47',
  
 V_48 = Vertex(name = 'V_48', 
 	 particles = [P.S1, P.S1c, P.g, P.g], 
-	 color = ['T(3,-1,1)*T(4,2,-1)', 'T(3,2,-1)*T(4,-1,1)'], 
+	 color = ['T(3,-1,2)*T(4,1,-1)', 'T(3,1,-1)*T(4,-1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_49,(1,0):C.GC_50}) 
  
  
 V_49 = Vertex(name = 'V_49', 
 	 particles = [P.S1, P.S2c, P.g, P.g], 
-	 color = ['T(3,-1,1)*T(4,2,-1)', 'T(3,2,-1)*T(4,-1,1)'], 
+	 color = ['T(3,-1,2)*T(4,1,-1)', 'T(3,1,-1)*T(4,-1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_51,(1,0):C.GC_52}) 
  
  
 V_50 = Vertex(name = 'V_50', 
 	 particles = [P.S2, P.S1c, P.g, P.g], 
-	 color = ['T(3,-1,1)*T(4,2,-1)', 'T(3,2,-1)*T(4,-1,1)'], 
+	 color = ['T(3,-1,2)*T(4,1,-1)', 'T(3,1,-1)*T(4,-1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_53,(1,0):C.GC_54}) 
  
  
 V_51 = Vertex(name = 'V_51', 
 	 particles = [P.S2, P.S2c, P.g, P.g], 
-	 color = ['T(3,-1,1)*T(4,2,-1)', 'T(3,2,-1)*T(4,-1,1)'], 
+	 color = ['T(3,-1,2)*T(4,1,-1)', 'T(3,1,-1)*T(4,-1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_55,(1,0):C.GC_56}) 
  
  
 V_52 = Vertex(name = 'V_52', 
 	 particles = [P.S1, P.S1c, P.g, P.A], 
-	 color = ['T(3,2,1)'], 
+	 color = ['T(3,1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_57}) 
  
  
 V_53 = Vertex(name = 'V_53', 
 	 particles = [P.S1, P.S2c, P.g, P.A], 
-	 color = ['T(3,2,1)'], 
+	 color = ['T(3,1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_58}) 
  
  
 V_54 = Vertex(name = 'V_54', 
 	 particles = [P.S2, P.S1c, P.g, P.A], 
-	 color = ['T(3,2,1)'], 
+	 color = ['T(3,1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_59}) 
  
  
 V_55 = Vertex(name = 'V_55', 
 	 particles = [P.S2, P.S2c, P.g, P.A], 
-	 color = ['T(3,2,1)'], 
+	 color = ['T(3,1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_60}) 
  
  
 V_56 = Vertex(name = 'V_56', 
 	 particles = [P.S1, P.S1c, P.g, P.Z], 
-	 color = ['T(3,2,1)'], 
+	 color = ['T(3,1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_61}) 
  
  
 V_57 = Vertex(name = 'V_57', 
 	 particles = [P.S1, P.S2c, P.g, P.Z], 
-	 color = ['T(3,2,1)'], 
+	 color = ['T(3,1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_62}) 
  
  
 V_58 = Vertex(name = 'V_58', 
 	 particles = [P.S2, P.S1c, P.g, P.Z], 
-	 color = ['T(3,2,1)'], 
+	 color = ['T(3,1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_63}) 
  
  
 V_59 = Vertex(name = 'V_59', 
 	 particles = [P.S2, P.S2c, P.g, P.Z], 
-	 color = ['T(3,2,1)'], 
+	 color = ['T(3,1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_64}) 
  
  
 V_60 = Vertex(name = 'V_60', 
-	 particles = [P.S1, P.S1c, P.A, P.A], 
-	 color = ['Identity(1,2)'], 
+	 particles = [P.S1, P.Rc, P.Wmc, P.g], 
+	 color = ['T(4,1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_65}) 
  
  
 V_61 = Vertex(name = 'V_61', 
-	 particles = [P.S1, P.S2c, P.A, P.A], 
-	 color = ['Identity(1,2)'], 
+	 particles = [P.S2, P.Rc, P.Wmc, P.g], 
+	 color = ['T(4,1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_66}) 
  
  
 V_62 = Vertex(name = 'V_62', 
-	 particles = [P.S2, P.S1c, P.A, P.A], 
+	 particles = [P.S1, P.S1c, P.A, P.A], 
 	 color = ['Identity(1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_67}) 
  
  
 V_63 = Vertex(name = 'V_63', 
-	 particles = [P.S2, P.S2c, P.A, P.A], 
+	 particles = [P.S1, P.S2c, P.A, P.A], 
 	 color = ['Identity(1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_68}) 
  
  
 V_64 = Vertex(name = 'V_64', 
-	 particles = [P.S1, P.S1c, P.A, P.Z], 
+	 particles = [P.S2, P.S1c, P.A, P.A], 
 	 color = ['Identity(1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_69}) 
  
  
 V_65 = Vertex(name = 'V_65', 
-	 particles = [P.S1, P.S2c, P.A, P.Z], 
+	 particles = [P.S2, P.S2c, P.A, P.A], 
 	 color = ['Identity(1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_70}) 
  
  
 V_66 = Vertex(name = 'V_66', 
-	 particles = [P.S2, P.S1c, P.A, P.Z], 
+	 particles = [P.S1, P.S1c, P.A, P.Z], 
 	 color = ['Identity(1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_71}) 
  
  
 V_67 = Vertex(name = 'V_67', 
-	 particles = [P.S2, P.S2c, P.A, P.Z], 
+	 particles = [P.S1, P.S2c, P.A, P.Z], 
 	 color = ['Identity(1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_72}) 
  
  
 V_68 = Vertex(name = 'V_68', 
-	 particles = [P.S1, P.S1c, P.Wmc, P.Wm], 
+	 particles = [P.S2, P.S1c, P.A, P.Z], 
 	 color = ['Identity(1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_73}) 
  
  
 V_69 = Vertex(name = 'V_69', 
-	 particles = [P.S1, P.S2c, P.Wmc, P.Wm], 
+	 particles = [P.S2, P.S2c, P.A, P.Z], 
 	 color = ['Identity(1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_74}) 
  
  
 V_70 = Vertex(name = 'V_70', 
-	 particles = [P.S2, P.S1c, P.Wmc, P.Wm], 
+	 particles = [P.S1, P.Rc, P.Wmc, P.A], 
 	 color = ['Identity(1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_75}) 
  
  
 V_71 = Vertex(name = 'V_71', 
-	 particles = [P.S2, P.S2c, P.Wmc, P.Wm], 
+	 particles = [P.S2, P.Rc, P.Wmc, P.A], 
 	 color = ['Identity(1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_76}) 
  
  
 V_72 = Vertex(name = 'V_72', 
-	 particles = [P.S1, P.S1c, P.Z, P.Z], 
+	 particles = [P.S1, P.S1c, P.Wmc, P.Wm], 
 	 color = ['Identity(1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_77}) 
  
  
 V_73 = Vertex(name = 'V_73', 
-	 particles = [P.S1, P.S2c, P.Z, P.Z], 
+	 particles = [P.S1, P.S2c, P.Wmc, P.Wm], 
 	 color = ['Identity(1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_78}) 
  
  
 V_74 = Vertex(name = 'V_74', 
-	 particles = [P.S2, P.S1c, P.Z, P.Z], 
+	 particles = [P.S2, P.S1c, P.Wmc, P.Wm], 
 	 color = ['Identity(1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_79}) 
  
  
 V_75 = Vertex(name = 'V_75', 
-	 particles = [P.S2, P.S2c, P.Z, P.Z], 
+	 particles = [P.S2, P.S2c, P.Wmc, P.Wm], 
 	 color = ['Identity(1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_80}) 
  
  
 V_76 = Vertex(name = 'V_76', 
-	 particles = [P.Rc, P.S1c, P.Wmc, P.g], 
-	 color = ['T(4,2,1)'], 
+	 particles = [P.S1, P.S1c, P.Z, P.Z], 
+	 color = ['Identity(1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_81}) 
  
  
 V_77 = Vertex(name = 'V_77', 
-	 particles = [P.Rc, P.S2c, P.Wmc, P.g], 
-	 color = ['T(4,2,1)'], 
+	 particles = [P.S1, P.S2c, P.Z, P.Z], 
+	 color = ['Identity(1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_82}) 
  
  
 V_78 = Vertex(name = 'V_78', 
-	 particles = [P.Rc, P.S1c, P.Wmc, P.A], 
+	 particles = [P.S2, P.S1c, P.Z, P.Z], 
 	 color = ['Identity(1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_83}) 
  
  
 V_79 = Vertex(name = 'V_79', 
-	 particles = [P.Rc, P.S2c, P.Wmc, P.A], 
+	 particles = [P.S2, P.S2c, P.Z, P.Z], 
 	 color = ['Identity(1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_84}) 
  
  
 V_80 = Vertex(name = 'V_80', 
-	 particles = [P.Rc, P.S1c, P.Wmc, P.Z], 
+	 particles = [P.S1, P.Rc, P.Wmc, P.Z], 
 	 color = ['Identity(1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_85}) 
  
  
 V_81 = Vertex(name = 'V_81', 
-	 particles = [P.Rc, P.S2c, P.Wmc, P.Z], 
+	 particles = [P.S2, P.Rc, P.Wmc, P.Z], 
 	 color = ['Identity(1,2)'], 
 	 lorentz = [L.SSVV1], 
 	 couplings = {(0,0):C.GC_86}) 
@@ -630,28 +630,28 @@ V_88 = Vertex(name = 'V_88',
  
  
 V_89 = Vertex(name = 'V_89', 
-	 particles = [P.R, P.S1, P.Wm], 
-	 color = ['Identity(1,2)'], 
+	 particles = [P.R, P.Rc, P.g], 
+	 color = ['T(3,1,2)'], 
 	 lorentz = [L.SSV1], 
 	 couplings = {(0,0):C.GC_94}) 
  
  
 V_90 = Vertex(name = 'V_90', 
-	 particles = [P.R, P.S2, P.Wm], 
+	 particles = [P.R, P.Rc, P.A], 
 	 color = ['Identity(1,2)'], 
 	 lorentz = [L.SSV1], 
 	 couplings = {(0,0):C.GC_95}) 
  
  
 V_91 = Vertex(name = 'V_91', 
-	 particles = [P.R, P.Rc, P.g], 
-	 color = ['T(3,1,2)'], 
+	 particles = [P.R, P.S1c, P.Wm], 
+	 color = ['Identity(1,2)'], 
 	 lorentz = [L.SSV1], 
 	 couplings = {(0,0):C.GC_96}) 
  
  
 V_92 = Vertex(name = 'V_92', 
-	 particles = [P.R, P.Rc, P.A], 
+	 particles = [P.R, P.S2c, P.Wm], 
 	 color = ['Identity(1,2)'], 
 	 lorentz = [L.SSV1], 
 	 couplings = {(0,0):C.GC_97}) 
@@ -666,14 +666,14 @@ V_93 = Vertex(name = 'V_93',
  
 V_94 = Vertex(name = 'V_94', 
 	 particles = [P.S1, P.S1c, P.g], 
-	 color = ['T(3,2,1)'], 
+	 color = ['T(3,1,2)'], 
 	 lorentz = [L.SSV1], 
 	 couplings = {(0,0):C.GC_99}) 
  
  
 V_95 = Vertex(name = 'V_95', 
 	 particles = [P.S2, P.S2c, P.g], 
-	 color = ['T(3,2,1)'], 
+	 color = ['T(3,1,2)'], 
 	 lorentz = [L.SSV1], 
 	 couplings = {(0,0):C.GC_100}) 
  
@@ -735,14 +735,14 @@ V_103 = Vertex(name = 'V_103',
  
  
 V_104 = Vertex(name = 'V_104', 
-	 particles = [P.Rc, P.S1c, P.Wmc], 
+	 particles = [P.S1, P.Rc, P.Wmc], 
 	 color = ['Identity(1,2)'], 
 	 lorentz = [L.SSV1], 
 	 couplings = {(0,0):C.GC_109}) 
  
  
 V_105 = Vertex(name = 'V_105', 
-	 particles = [P.Rc, P.S2c, P.Wmc], 
+	 particles = [P.S2, P.Rc, P.Wmc], 
 	 color = ['Identity(1,2)'], 
 	 lorentz = [L.SSV1], 
 	 couplings = {(0,0):C.GC_110}) 
@@ -1022,126 +1022,126 @@ V_144 = Vertex(name = 'V_144',
  
  
 V_145 = Vertex(name = 'V_145', 
-	 particles = [P.nu1, P.d1, P.S1], 
+	 particles = [P.nu1, P.d1, P.S1c], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_183,(0,1):C.GC_184}) 
  
  
 V_146 = Vertex(name = 'V_146', 
-	 particles = [P.nu1, P.d1, P.S2], 
+	 particles = [P.nu1, P.d1, P.S2c], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_185,(0,1):C.GC_186}) 
  
  
 V_147 = Vertex(name = 'V_147', 
-	 particles = [P.nu1, P.d2, P.S1], 
+	 particles = [P.nu1, P.d2, P.S1c], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_187,(0,1):C.GC_188}) 
  
  
 V_148 = Vertex(name = 'V_148', 
-	 particles = [P.nu1, P.d2, P.S2], 
+	 particles = [P.nu1, P.d2, P.S2c], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_189,(0,1):C.GC_190}) 
  
  
 V_149 = Vertex(name = 'V_149', 
-	 particles = [P.nu1, P.d3, P.S1], 
+	 particles = [P.nu1, P.d3, P.S1c], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_191,(0,1):C.GC_192}) 
  
  
 V_150 = Vertex(name = 'V_150', 
-	 particles = [P.nu1, P.d3, P.S2], 
+	 particles = [P.nu1, P.d3, P.S2c], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_193,(0,1):C.GC_194}) 
  
  
 V_151 = Vertex(name = 'V_151', 
-	 particles = [P.nu2, P.d1, P.S1], 
+	 particles = [P.nu2, P.d1, P.S1c], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_195,(0,1):C.GC_196}) 
  
  
 V_152 = Vertex(name = 'V_152', 
-	 particles = [P.nu2, P.d1, P.S2], 
+	 particles = [P.nu2, P.d1, P.S2c], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_197,(0,1):C.GC_198}) 
  
  
 V_153 = Vertex(name = 'V_153', 
-	 particles = [P.nu2, P.d2, P.S1], 
+	 particles = [P.nu2, P.d2, P.S1c], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_199,(0,1):C.GC_200}) 
  
  
 V_154 = Vertex(name = 'V_154', 
-	 particles = [P.nu2, P.d2, P.S2], 
+	 particles = [P.nu2, P.d2, P.S2c], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_201,(0,1):C.GC_202}) 
  
  
 V_155 = Vertex(name = 'V_155', 
-	 particles = [P.nu2, P.d3, P.S1], 
+	 particles = [P.nu2, P.d3, P.S1c], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_203,(0,1):C.GC_204}) 
  
  
 V_156 = Vertex(name = 'V_156', 
-	 particles = [P.nu2, P.d3, P.S2], 
+	 particles = [P.nu2, P.d3, P.S2c], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_205,(0,1):C.GC_206}) 
  
  
 V_157 = Vertex(name = 'V_157', 
-	 particles = [P.nu3, P.d1, P.S1], 
+	 particles = [P.nu3, P.d1, P.S1c], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_207,(0,1):C.GC_208}) 
  
  
 V_158 = Vertex(name = 'V_158', 
-	 particles = [P.nu3, P.d1, P.S2], 
+	 particles = [P.nu3, P.d1, P.S2c], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_209,(0,1):C.GC_210}) 
  
  
 V_159 = Vertex(name = 'V_159', 
-	 particles = [P.nu3, P.d2, P.S1], 
+	 particles = [P.nu3, P.d2, P.S1c], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_211,(0,1):C.GC_212}) 
  
  
 V_160 = Vertex(name = 'V_160', 
-	 particles = [P.nu3, P.d2, P.S2], 
+	 particles = [P.nu3, P.d2, P.S2c], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_213,(0,1):C.GC_214}) 
  
  
 V_161 = Vertex(name = 'V_161', 
-	 particles = [P.nu3, P.d3, P.S1], 
+	 particles = [P.nu3, P.d3, P.S1c], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_215,(0,1):C.GC_216}) 
  
  
 V_162 = Vertex(name = 'V_162', 
-	 particles = [P.nu3, P.d3, P.S2], 
+	 particles = [P.nu3, P.d3, P.S2c], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_217,(0,1):C.GC_218}) 
@@ -1337,126 +1337,126 @@ V_189 = Vertex(name = 'V_189',
  
  
 V_190 = Vertex(name = 'V_190', 
-	 particles = [P.e1, P.u1, P.S1], 
+	 particles = [P.e1, P.u1, P.S1c], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_264,(0,1):C.GC_265}) 
  
  
 V_191 = Vertex(name = 'V_191', 
-	 particles = [P.e1, P.u1, P.S2], 
+	 particles = [P.e1, P.u1, P.S2c], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_266,(0,1):C.GC_267}) 
  
  
 V_192 = Vertex(name = 'V_192', 
-	 particles = [P.e1, P.u2, P.S1], 
+	 particles = [P.e1, P.u2, P.S1c], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_268,(0,1):C.GC_269}) 
  
  
 V_193 = Vertex(name = 'V_193', 
-	 particles = [P.e1, P.u2, P.S2], 
+	 particles = [P.e1, P.u2, P.S2c], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_270,(0,1):C.GC_271}) 
  
  
 V_194 = Vertex(name = 'V_194', 
-	 particles = [P.e1, P.u3, P.S1], 
+	 particles = [P.e1, P.u3, P.S1c], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_272,(0,1):C.GC_273}) 
  
  
 V_195 = Vertex(name = 'V_195', 
-	 particles = [P.e1, P.u3, P.S2], 
+	 particles = [P.e1, P.u3, P.S2c], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_274,(0,1):C.GC_275}) 
  
  
 V_196 = Vertex(name = 'V_196', 
-	 particles = [P.e2, P.u1, P.S1], 
+	 particles = [P.e2, P.u1, P.S1c], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_276,(0,1):C.GC_277}) 
  
  
 V_197 = Vertex(name = 'V_197', 
-	 particles = [P.e2, P.u1, P.S2], 
+	 particles = [P.e2, P.u1, P.S2c], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_278,(0,1):C.GC_279}) 
  
  
 V_198 = Vertex(name = 'V_198', 
-	 particles = [P.e2, P.u2, P.S1], 
+	 particles = [P.e2, P.u2, P.S1c], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_280,(0,1):C.GC_281}) 
  
  
 V_199 = Vertex(name = 'V_199', 
-	 particles = [P.e2, P.u2, P.S2], 
+	 particles = [P.e2, P.u2, P.S2c], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_282,(0,1):C.GC_283}) 
  
  
 V_200 = Vertex(name = 'V_200', 
-	 particles = [P.e2, P.u3, P.S1], 
+	 particles = [P.e2, P.u3, P.S1c], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_284,(0,1):C.GC_285}) 
  
  
 V_201 = Vertex(name = 'V_201', 
-	 particles = [P.e2, P.u3, P.S2], 
+	 particles = [P.e2, P.u3, P.S2c], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_286,(0,1):C.GC_287}) 
  
  
 V_202 = Vertex(name = 'V_202', 
-	 particles = [P.e3, P.u1, P.S1], 
+	 particles = [P.e3, P.u1, P.S1c], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_288,(0,1):C.GC_289}) 
  
  
 V_203 = Vertex(name = 'V_203', 
-	 particles = [P.e3, P.u1, P.S2], 
+	 particles = [P.e3, P.u1, P.S2c], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_290,(0,1):C.GC_291}) 
  
  
 V_204 = Vertex(name = 'V_204', 
-	 particles = [P.e3, P.u2, P.S1], 
+	 particles = [P.e3, P.u2, P.S1c], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_292,(0,1):C.GC_293}) 
  
  
 V_205 = Vertex(name = 'V_205', 
-	 particles = [P.e3, P.u2, P.S2], 
+	 particles = [P.e3, P.u2, P.S2c], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_294,(0,1):C.GC_295}) 
  
  
 V_206 = Vertex(name = 'V_206', 
-	 particles = [P.e3, P.u3, P.S1], 
+	 particles = [P.e3, P.u3, P.S1c], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_296,(0,1):C.GC_297}) 
  
  
 V_207 = Vertex(name = 'V_207', 
-	 particles = [P.e3, P.u3, P.S2], 
+	 particles = [P.e3, P.u3, P.S2c], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_298,(0,1):C.GC_299}) 
@@ -1820,126 +1820,126 @@ V_258 = Vertex(name = 'V_258',
  
  
 V_259 = Vertex(name = 'V_259', 
-	 particles = [P.d1bar, P.nu1, P.S1c], 
+	 particles = [P.d1bar, P.nu1, P.S1], 
 	 color = ['Identity(1,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_393,(0,1):C.GC_394}) 
  
  
 V_260 = Vertex(name = 'V_260', 
-	 particles = [P.d1bar, P.nu1, P.S2c], 
+	 particles = [P.d1bar, P.nu1, P.S2], 
 	 color = ['Identity(1,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_395,(0,1):C.GC_396}) 
  
  
 V_261 = Vertex(name = 'V_261', 
-	 particles = [P.d1bar, P.nu2, P.S1c], 
+	 particles = [P.d1bar, P.nu2, P.S1], 
 	 color = ['Identity(1,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_397,(0,1):C.GC_398}) 
  
  
 V_262 = Vertex(name = 'V_262', 
-	 particles = [P.d1bar, P.nu2, P.S2c], 
+	 particles = [P.d1bar, P.nu2, P.S2], 
 	 color = ['Identity(1,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_399,(0,1):C.GC_400}) 
  
  
 V_263 = Vertex(name = 'V_263', 
-	 particles = [P.d1bar, P.nu3, P.S1c], 
+	 particles = [P.d1bar, P.nu3, P.S1], 
 	 color = ['Identity(1,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_401,(0,1):C.GC_402}) 
  
  
 V_264 = Vertex(name = 'V_264', 
-	 particles = [P.d1bar, P.nu3, P.S2c], 
+	 particles = [P.d1bar, P.nu3, P.S2], 
 	 color = ['Identity(1,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_403,(0,1):C.GC_404}) 
  
  
 V_265 = Vertex(name = 'V_265', 
-	 particles = [P.d2bar, P.nu1, P.S1c], 
+	 particles = [P.d2bar, P.nu1, P.S1], 
 	 color = ['Identity(1,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_405,(0,1):C.GC_406}) 
  
  
 V_266 = Vertex(name = 'V_266', 
-	 particles = [P.d2bar, P.nu1, P.S2c], 
+	 particles = [P.d2bar, P.nu1, P.S2], 
 	 color = ['Identity(1,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_407,(0,1):C.GC_408}) 
  
  
 V_267 = Vertex(name = 'V_267', 
-	 particles = [P.d2bar, P.nu2, P.S1c], 
+	 particles = [P.d2bar, P.nu2, P.S1], 
 	 color = ['Identity(1,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_409,(0,1):C.GC_410}) 
  
  
 V_268 = Vertex(name = 'V_268', 
-	 particles = [P.d2bar, P.nu2, P.S2c], 
+	 particles = [P.d2bar, P.nu2, P.S2], 
 	 color = ['Identity(1,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_411,(0,1):C.GC_412}) 
  
  
 V_269 = Vertex(name = 'V_269', 
-	 particles = [P.d2bar, P.nu3, P.S1c], 
+	 particles = [P.d2bar, P.nu3, P.S1], 
 	 color = ['Identity(1,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_413,(0,1):C.GC_414}) 
  
  
 V_270 = Vertex(name = 'V_270', 
-	 particles = [P.d2bar, P.nu3, P.S2c], 
+	 particles = [P.d2bar, P.nu3, P.S2], 
 	 color = ['Identity(1,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_415,(0,1):C.GC_416}) 
  
  
 V_271 = Vertex(name = 'V_271', 
-	 particles = [P.d3bar, P.nu1, P.S1c], 
+	 particles = [P.d3bar, P.nu1, P.S1], 
 	 color = ['Identity(1,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_417,(0,1):C.GC_418}) 
  
  
 V_272 = Vertex(name = 'V_272', 
-	 particles = [P.d3bar, P.nu1, P.S2c], 
+	 particles = [P.d3bar, P.nu1, P.S2], 
 	 color = ['Identity(1,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_419,(0,1):C.GC_420}) 
  
  
 V_273 = Vertex(name = 'V_273', 
-	 particles = [P.d3bar, P.nu2, P.S1c], 
+	 particles = [P.d3bar, P.nu2, P.S1], 
 	 color = ['Identity(1,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_421,(0,1):C.GC_422}) 
  
  
 V_274 = Vertex(name = 'V_274', 
-	 particles = [P.d3bar, P.nu2, P.S2c], 
+	 particles = [P.d3bar, P.nu2, P.S2], 
 	 color = ['Identity(1,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_423,(0,1):C.GC_424}) 
  
  
 V_275 = Vertex(name = 'V_275', 
-	 particles = [P.d3bar, P.nu3, P.S1c], 
+	 particles = [P.d3bar, P.nu3, P.S1], 
 	 color = ['Identity(1,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_425,(0,1):C.GC_426}) 
  
  
 V_276 = Vertex(name = 'V_276', 
-	 particles = [P.d3bar, P.nu3, P.S2c], 
+	 particles = [P.d3bar, P.nu3, P.S2], 
 	 color = ['Identity(1,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_427,(0,1):C.GC_428}) 
@@ -2009,126 +2009,126 @@ V_285 = Vertex(name = 'V_285',
  
  
 V_286 = Vertex(name = 'V_286', 
-	 particles = [P.e1bar, P.u1bar, P.S1c], 
+	 particles = [P.e1bar, P.u1bar, P.S1], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_447,(0,1):C.GC_448}) 
  
  
 V_287 = Vertex(name = 'V_287', 
-	 particles = [P.e1bar, P.u1bar, P.S2c], 
+	 particles = [P.e1bar, P.u1bar, P.S2], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_449,(0,1):C.GC_450}) 
  
  
 V_288 = Vertex(name = 'V_288', 
-	 particles = [P.e1bar, P.u2bar, P.S1c], 
+	 particles = [P.e1bar, P.u2bar, P.S1], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_451,(0,1):C.GC_452}) 
  
  
 V_289 = Vertex(name = 'V_289', 
-	 particles = [P.e1bar, P.u2bar, P.S2c], 
+	 particles = [P.e1bar, P.u2bar, P.S2], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_453,(0,1):C.GC_454}) 
  
  
 V_290 = Vertex(name = 'V_290', 
-	 particles = [P.e1bar, P.u3bar, P.S1c], 
+	 particles = [P.e1bar, P.u3bar, P.S1], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_455,(0,1):C.GC_456}) 
  
  
 V_291 = Vertex(name = 'V_291', 
-	 particles = [P.e1bar, P.u3bar, P.S2c], 
+	 particles = [P.e1bar, P.u3bar, P.S2], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_457,(0,1):C.GC_458}) 
  
  
 V_292 = Vertex(name = 'V_292', 
-	 particles = [P.e2bar, P.u1bar, P.S1c], 
+	 particles = [P.e2bar, P.u1bar, P.S1], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_459,(0,1):C.GC_460}) 
  
  
 V_293 = Vertex(name = 'V_293', 
-	 particles = [P.e2bar, P.u1bar, P.S2c], 
+	 particles = [P.e2bar, P.u1bar, P.S2], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_461,(0,1):C.GC_462}) 
  
  
 V_294 = Vertex(name = 'V_294', 
-	 particles = [P.e2bar, P.u2bar, P.S1c], 
+	 particles = [P.e2bar, P.u2bar, P.S1], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_463,(0,1):C.GC_464}) 
  
  
 V_295 = Vertex(name = 'V_295', 
-	 particles = [P.e2bar, P.u2bar, P.S2c], 
+	 particles = [P.e2bar, P.u2bar, P.S2], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_465,(0,1):C.GC_466}) 
  
  
 V_296 = Vertex(name = 'V_296', 
-	 particles = [P.e2bar, P.u3bar, P.S1c], 
+	 particles = [P.e2bar, P.u3bar, P.S1], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_467,(0,1):C.GC_468}) 
  
  
 V_297 = Vertex(name = 'V_297', 
-	 particles = [P.e2bar, P.u3bar, P.S2c], 
+	 particles = [P.e2bar, P.u3bar, P.S2], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_469,(0,1):C.GC_470}) 
  
  
 V_298 = Vertex(name = 'V_298', 
-	 particles = [P.e3bar, P.u1bar, P.S1c], 
+	 particles = [P.e3bar, P.u1bar, P.S1], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_471,(0,1):C.GC_472}) 
  
  
 V_299 = Vertex(name = 'V_299', 
-	 particles = [P.e3bar, P.u1bar, P.S2c], 
+	 particles = [P.e3bar, P.u1bar, P.S2], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_473,(0,1):C.GC_474}) 
  
  
 V_300 = Vertex(name = 'V_300', 
-	 particles = [P.e3bar, P.u2bar, P.S1c], 
+	 particles = [P.e3bar, P.u2bar, P.S1], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_475,(0,1):C.GC_476}) 
  
  
 V_301 = Vertex(name = 'V_301', 
-	 particles = [P.e3bar, P.u2bar, P.S2c], 
+	 particles = [P.e3bar, P.u2bar, P.S2], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_477,(0,1):C.GC_478}) 
  
  
 V_302 = Vertex(name = 'V_302', 
-	 particles = [P.e3bar, P.u3bar, P.S1c], 
+	 particles = [P.e3bar, P.u3bar, P.S1], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_479,(0,1):C.GC_480}) 
  
  
 V_303 = Vertex(name = 'V_303', 
-	 particles = [P.e3bar, P.u3bar, P.S2c], 
+	 particles = [P.e3bar, P.u3bar, P.S2], 
 	 color = ['Identity(2,3)'], 
 	 lorentz = [L.FFS1,L.FFS2], 
 	 couplings = {(0,0):C.GC_481,(0,1):C.GC_482}) 
