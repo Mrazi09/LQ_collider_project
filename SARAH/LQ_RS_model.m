@@ -30,7 +30,7 @@ FermionFields[[5]] = {e, 3, conj[eR],       1, 1,  1};
 
 
 ScalarFields[[1]] =  {H, 1, {Hp, H0},     1/2, 2,  1};
-ScalarFields[[2]] =  {S, 1, s,            1/3, 1, -3};
+ScalarFields[[2]] =  {S, 1, s,            -1/3, 1, 3};
 ScalarFields[[3]] =  {R, 1, {rp, rm},     1/6, 2,  3};
 
 
@@ -59,10 +59,10 @@ LagNoHC = - mu2 conj[H] . H - 1/2 Lambd conj[H] . H . conj[H] . H -\
 LagHC   = - (Yd conj[H] . d . q + Ye conj[H] . e . l + Yu u . q . H - (cw1/(v^2))(H . l) . (l . H));
 
 (*Z2 symmetry protects against di-quark interactions*)
-LagLQ   = - (Theta l . q . S + Upsilon u . e . conj[S] + Omega R . l . d);
+LagLQ   = - (Theta l . q . conj[S] + Upsilon u . e . S + Omega R . l . d);
 
-LagLQV  = - lRRRH R . R . R . conj[H] - lRRS R . R . conj[S] - a1 R . S . conj[H] - RRSS R . S . conj[R] . conj[S] -\
-			lSSHR S . S . conj[H] . conj[R];
+LagLQV  = - lRRRH R . R . R . conj[H] - lRRS R . R . S - a1 R . conj[S] . conj[H] - RRSS R . conj[S] . conj[R] . S -\
+			lSSHR conj[S] . conj[S] . conj[H] . conj[R];
 
 
 (* Gauge Sector *)
@@ -86,7 +86,7 @@ DEFINITION[EWSB][VEVs]=
 
 DEFINITION[EWSB][MatterSector]=   
     {
-     {{s, conj[rm]}, {SS,ZH}},
+     {{s, rm}, {SS,ZH}},
      {{{dL}, {conj[dR]}}, {{DL,Vd}, {DR,Ud}}},
      {{{uL}, {conj[uR]}}, {{UL,Vu}, {UR,Uu}}},
      {{{eL}, {conj[eR]}}, {{EL,Ve}, {ER,Ue}}},

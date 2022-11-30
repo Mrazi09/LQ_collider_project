@@ -30,7 +30,7 @@ ParticleDefinitions[GaugeES] = {
           Width -> Automatic, 
           Mass -> Automatic,
           FeynArtsNr -> 100,
-          ElectricCharge -> 1/3,
+          ElectricCharge -> -1/3,
           LaTeX -> "S",
           OutputName -> "S" }}, 
           
@@ -242,7 +242,7 @@ ParticleDefinitions[GaugeES] = {
         Width -> {Automatic , Automatic},
         FeynArtsNr -> 201,
         LaTeX -> "S",
-        ElectricCharge -> 1/3,
+        ElectricCharge -> -1/3,
         OutputName -> "S"  }},
 
     {rp,{
