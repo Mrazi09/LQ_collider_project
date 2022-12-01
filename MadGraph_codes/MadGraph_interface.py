@@ -12,8 +12,7 @@ import pandas as pd
 
 #Number of runs
 N_max = len(glob.glob("/home/felipe/JoaoPino/1-LQsCollider_project/Cards/*"))
-#N = N_max
-N = 10
+N = N_max
 
 #Number of events
 nevents = 10000
@@ -51,7 +50,7 @@ elif os.path.exists("{path}".format(path = path_Data)) == False:
     os.makedirs("{path}".format(path = path_Data))
     
 #Generate scripts for running MadGraph
-for idx in range(N):
+for idx in range(11, N):
     
     Card_path_TChannel = "{path}/Events/LQ_T_channel_{index}/Cards".format(path = path_MadGraph, index = idx)
     Card_path_GluonSplit = "{path}/Events/LQ_GluonSplit_channel_{index}/Cards".format(path = path_MadGraph, index = idx)
@@ -161,62 +160,66 @@ for idx in range(N):
 Features = ['mS1', 'mS2', 'mR', 'xsec_TChannel (fb)', 'xsec_GluonSplit (fb)']
 df = pd.DataFrame(columns=Features)
 
-for idx in range(N):
+for idx in range(11, N):
     subprocess.call(["bash", "{path}/P_Tchannel_{index}.sh".format(path = path_run, index = idx)])
     subprocess.call(["bash", "{path}/P_GluonSplit_{index}.sh".format(path = path_run, index = idx)])
     
     #Read run_tag file
-    Output_tchannel = open('{path}/Events/LQ_T_channel_{index}/Events/run_01/run_01_tag_1_banner.txt'.format(path = path_MadGraph, index = idx), 'r')
-    run_tag_tchannel = Output_tchannel.readlines() 
+    try:
+        Output_tchannel = open('{path}/Events/LQ_T_channel_{index}/Events/run_01/run_01_tag_1_banner.txt'.format(path = path_MadGraph, index = idx), 'r')
+        run_tag_tchannel = Output_tchannel.readlines() 
+
+        Output_gluonsplit = open('{path}/Events/LQ_GluonS_channel_{index}/Events/run_01/run_01_tag_1_banner.txt'.format(path = path_MadGraph, index = idx), 'r')
+        run_tag_gluonsplit = Output_gluonsplit.readlines() 
+
+        #Get cross-sections
+        for j in run_tag_tchannel:
+            if j.__contains__('Integrated'):    
+                    for word in j.split():
+                        try:
+                            xsec_TChannel = float(word)*1e3
+                        except ValueError:
+                            pass
+
+        for j in run_tag_gluonsplit:
+            if j.__contains__('Integrated'):    
+                    for word in j.split():
+                        try:
+                            xsec_GluonSplit = float(word)*1e3
+                        except ValueError:
+                            pass
+
+        #Get masses
+        for j in run_tag_tchannel:
+            if j.__contains__('ms1'):    
+                    for word in j.split():
+                        try:
+                            mS1 = float(word)
+                        except ValueError:
+                            pass
+
+        for j in run_tag_tchannel:
+            if j.__contains__('ms2'):    
+                    for word in j.split():
+                        try:
+                            mS2 = float(word)
+                        except ValueError:
+                            pass
+
+        for j in run_tag_tchannel:
+            if j.__contains__('mr'):    
+                    for word in j.split():
+                        try:
+                            mR = float(word)
+                        except ValueError:
+                            pass    
+
+        MadGraph_data = [mS1, mS2, mR, xsec_TChannel, xsec_GluonSplit]
+        entry = pd.DataFrame([MadGraph_data], columns=Features)
+        df = df.append(entry)
+        df.to_csv('{path}/Data_MadGraph.csv'.format(path = path_Data),sep=',',index=False)
     
-    Output_gluonsplit = open('{path}/Events/LQ_GluonS_channel_{index}/Events/run_01/run_01_tag_1_banner.txt'.format(path = path_MadGraph, index = idx), 'r')
-    run_tag_gluonsplit = Output_gluonsplit.readlines() 
-    
-    #Get cross-sections
-    for j in run_tag_tchannel:
-        if j.__contains__('Integrated'):    
-                for word in j.split():
-                    try:
-                        xsec_TChannel = float(word)*1e3
-                    except ValueError:
-                        pass
-    
-    for j in run_tag_gluonsplit:
-        if j.__contains__('Integrated'):    
-                for word in j.split():
-                    try:
-                        xsec_GluonSplit = float(word)*1e3
-                    except ValueError:
-                        pass
-                    
-    #Get masses
-    for j in run_tag_tchannel:
-        if j.__contains__('ms1'):    
-                for word in j.split():
-                    try:
-                        mS1 = float(word)
-                    except ValueError:
-                        pass
-    
-    for j in run_tag_tchannel:
-        if j.__contains__('ms2'):    
-                for word in j.split():
-                    try:
-                        mS2 = float(word)
-                    except ValueError:
-                        pass
-                
-    for j in run_tag_tchannel:
-        if j.__contains__('mr'):    
-                for word in j.split():
-                    try:
-                        mR = float(word)
-                    except ValueError:
-                        pass    
-    
-    MadGraph_data = [mS1, mS2, mR, xsec_TChannel, xsec_GluonSplit]
-    entry = pd.DataFrame([MadGraph_data], columns=Features)
-    df = df.append(entry)
-    df.to_csv('{path}/Data_MadGraph.csv'.format(path = path_Data),sep=',',index=False)
+    except FileNotFoundError:
+        continue
 
 
