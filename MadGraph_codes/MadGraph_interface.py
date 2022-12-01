@@ -50,7 +50,7 @@ elif os.path.exists("{path}".format(path = path_Data)) == False:
     os.makedirs("{path}".format(path = path_Data))
     
 #Generate scripts for running MadGraph
-for idx in range(11, N):
+for idx in range(0, N):
     
     Card_path_TChannel = "{path}/Events/LQ_T_channel_{index}/Cards".format(path = path_MadGraph, index = idx)
     Card_path_GluonSplit = "{path}/Events/LQ_GluonSplit_channel_{index}/Cards".format(path = path_MadGraph, index = idx)
@@ -160,7 +160,7 @@ for idx in range(11, N):
 Features = ['mS1', 'mS2', 'mR', 'xsec_TChannel (fb)', 'xsec_GluonSplit (fb)']
 df = pd.DataFrame(columns=Features)
 
-for idx in range(11, N):
+for idx in range(0, N):
     subprocess.call(["bash", "{path}/P_Tchannel_{index}.sh".format(path = path_run, index = idx)])
     subprocess.call(["bash", "{path}/P_GluonSplit_{index}.sh".format(path = path_run, index = idx)])
     
