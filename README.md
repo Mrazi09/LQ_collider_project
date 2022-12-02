@@ -9,4 +9,6 @@ Codes and data for the LQ collider research project, which corresponds to the pa
 
 **MadGraph_codes** Auxiliary python code for contructing MadGraph parameter cards as well as a python interface with MadGraph to generate events
 
+**Data** Some numerical data used for the simulations
+
 For additional information or questions, feel free to contact me by email (jpedropino@ua.pt or johnppg5@gmail.com)
