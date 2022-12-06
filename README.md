@@ -11,4 +11,6 @@ Codes and data for the LQ collider research project, which corresponds to the pa
 
 **Data_MadGraph** Some numerical data used for the simulations
 
+**Plots** Folder with various plots, as well as the associated python script (as well as a jupyter notebook) to draw them
+
 For additional information or questions, feel free to contact me by email (jpedropino@ua.pt or johnppg5@gmail.com)
