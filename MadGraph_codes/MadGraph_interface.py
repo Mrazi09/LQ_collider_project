@@ -35,10 +35,10 @@ ebeam = (13.6/2) * 1e3
 Full_chain = False
 
 #Run which topology
-GluonSplit_BB = False
-GluonSplit_BC = True
-GluonSplit_BS = True
-TChannel = False
+Cond_GluonSplit_BB = False
+Cond_GluonSplit_BC = True
+Cond_GluonSplit_BS = True
+Cond_TChannel = False
 
 #Check if folder exists. If exists, delete contents
 if os.path.exists("{path}".format(path = path_run)) == True:
@@ -265,53 +265,68 @@ for idx in range(N):
 #Run MadGraph
 Features = ['mS1', 'mS2', 'mR']
 
-if TChannel == True:
+if Cond_TChannel == True:
     Features = Features + ['xsec_TChannel (fb)']
 
-if GluonSplit_BB == True:
+if Cond_GluonSplit_BB == True:
     Features = Features + ['xsec_GluonSplit (fb)']
     
-if GluonSplit_BC == True:
+if Cond_GluonSplit_BC == True:
     Features = Features + ['xsec_GluonSplit_BC (fb)']
 
-if GluonSplit_BS == True:
+if Cond_GluonSplit_BS == True:
     Features = Features + ['xsec_GluonSplit_BS (fb)']
 
 df = pd.DataFrame(columns=Features)
 
 for idx in range(N):
     
-    if TChannel == True: 
+    if Cond_TChannel == True: 
         subprocess.call(["bash", "{path}/P_Tchannel_{index}.sh".format(path = path_run, index = idx)])
     
-    if GluonSplit_BB == True:
+    if Cond_GluonSplit_BB == True:
         subprocess.call(["bash", "{path}/P_GluonSplit_{index}.sh".format(path = path_run, index = idx)])
     
-    if GluonSplit_BC == True:
+    if Cond_GluonSplit_BC == True:
         subprocess.call(["bash", "{path}/P_GluonSplit_BC_{index}.sh".format(path = path_run, index = idx)])
     
-    if GluonSplit_BS == True:
+    if Cond_GluonSplit_BS == True:
         subprocess.call(["bash", "{path}/P_GluonSplit_BS_{index}.sh".format(path = path_run, index = idx)])
     
     #Read run_tag file
-    if TChannel == True:  
+    if Cond_TChannel == True:  
         Output_tchannel = open('{path}/Events/LQ_T_channel_{index}/Events/run_01/run_01_tag_1_banner.txt'.format(path = path_MadGraph, index = idx), 'r')
         run_tag_tchannel = Output_tchannel.readlines() 
     
-    if GluonSplit_BB == True:
+    if Cond_GluonSplit_BB == True:
         Output_gluonsplit = open('{path}/Events/LQ_GluonS_channel_{index}/Events/run_01/run_01_tag_1_banner.txt'.format(path = path_MadGraph, index = idx), 'r')
         run_tag_gluonsplit = Output_gluonsplit.readlines() 
     
-    if GluonSplit_BC == True:
+    if Cond_GluonSplit_BC == True:
         Output_gluonsplit_BC = open('{path}/Events/LQ_GluonS_BC_channel_{index}/Events/run_01/run_01_tag_1_banner.txt'.format(path = path_MadGraph, index = idx), 'r')
         run_tag_gluonsplit_BC = Output_gluonsplit_BC.readlines() 
         
-    if GluonSplit_BS == True:
+    if Cond_GluonSplit_BS == True:
         Output_gluonsplit_BS = open('{path}/Events/LQ_GluonS_BS_channel_{index}/Events/run_01/run_01_tag_1_banner.txt'.format(path = path_MadGraph, index = idx), 'r')
         run_tag_gluonsplit_BS = Output_gluonsplit_BS.readlines() 
     
+    while True:
+        if 'run_tag_tchannel' in vars():
+            mass_run = run_tag_tchannel
+            break
+        elif 'run_tag_gluonsplit' in vars():
+            mass_run = run_tag_gluonsplit
+            break
+        elif 'run_tag_gluonsplit_BC' in vars():
+            mass_run = run_tag_gluonsplit_BC
+            break
+        elif 'run_tag_gluonsplit_BS' in vars():
+            mass_run = run_tag_gluonsplit_BS
+            break
+        break
+    
     #Get masses
-    for j in run_tag_tchannel:
+    for j in mass_run:
         if j.__contains__('ms1'):    
                 for word in j.split():
                     try:
@@ -319,7 +334,7 @@ for idx in range(N):
                     except ValueError:
                         pass
     
-    for j in run_tag_tchannel:
+    for j in mass_run:
         if j.__contains__('ms2'):    
                 for word in j.split():
                     try:
@@ -327,7 +342,7 @@ for idx in range(N):
                     except ValueError:
                         pass
                 
-    for j in run_tag_tchannel:
+    for j in mass_run:
         if j.__contains__('mr'):    
                 for word in j.split():
                     try:
@@ -336,7 +351,7 @@ for idx in range(N):
                         pass
     
     #Get cross-sections
-    if TChannel == True: 
+    if Cond_TChannel == True: 
         for j in run_tag_tchannel:
             if j.__contains__('Integrated'):    
                     for word in j.split():
@@ -345,7 +360,7 @@ for idx in range(N):
                         except ValueError:
                             pass
     
-    if GluonSplit_BB == True:
+    if Cond_GluonSplit_BB == True:
         for j in run_tag_gluonsplit:
             if j.__contains__('Integrated'):    
                     for word in j.split():
@@ -353,7 +368,7 @@ for idx in range(N):
                             xsec_GluonSplit = float(word)*1e3
                         except ValueError:
                             pass
-    if GluonSplit_BC == True:
+    if Cond_GluonSplit_BC == True:
         for j in run_tag_gluonsplit_BC:
             if j.__contains__('Integrated'):    
                     for word in j.split():
@@ -362,7 +377,7 @@ for idx in range(N):
                         except ValueError:
                             pass
     
-    if GluonSplit_BS == True:
+    if Cond_GluonSplit_BS == True:
         for j in run_tag_gluonsplit_BS:
             if j.__contains__('Integrated'):    
                     for word in j.split():
@@ -373,20 +388,20 @@ for idx in range(N):
     
     MadGraph_data = [mS1, mS2, mR]
     
-    if TChannel == True:
+    if Cond_TChannel == True:
         MadGraph_data = MadGraph_data + [xsec_TChannel]
     
-    if GluonSplit_BB == True:
+    if Cond_GluonSplit_BB == True:
         MadGraph_data = MadGraph_data + [xsec_GluonSplit]
     
-    if GluonSplit_BC == True:
+    if Cond_GluonSplit_BC == True:
         MadGraph_data = MadGraph_data + [xsec_GluonSplit_BC]
     
-    if GluonSplit_BS == True:
+    if Cond_GluonSplit_BS == True:
         MadGraph_data = MadGraph_data + [xsec_GluonSplit_BS]
         
     entry = pd.DataFrame([MadGraph_data], columns=Features)
     df = df.append(entry)
     df.to_csv('{path}/Data_MadGraph.csv'.format(path = path_Data),sep=',',index=False)
-    
+        
 
