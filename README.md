@@ -15,4 +15,6 @@ Note: For the card generation, data from https://github.com/Mrazi09/Leptoquark-p
 
 **Plots** Folder with various plots, as well as the associated python script (as well as a jupyter notebook) to draw them
 
+To download, select ```<> Code```
+
 For additional information or questions, feel free to contact me by email (jpedropino@ua.pt or johnppg5@gmail.com)
