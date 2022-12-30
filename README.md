@@ -11,7 +11,7 @@ Codes and data for the LQ collider research project, which corresponds to the pa
 
 Note: For the card generation, data from https://github.com/Mrazi09/Leptoquark-project---Data is used. In particular the data from the Data_v3 folder.
 
-**Data_MadGraph** Some numerical data used for the simulations
+**Data_MadGraph** Some numerical data used for the simulations and plots
 
 **Plots** Folder with various plots, as well as the associated python script (as well as a jupyter notebook) to draw them
 
