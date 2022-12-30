@@ -15,6 +15,6 @@ Note: For the card generation, data from https://github.com/Mrazi09/Leptoquark-p
 
 **Plots** Folder with various plots, as well as the associated python script (as well as a jupyter notebook) to draw them
 
-To download, select ```<> Code```
+To download, select ```<> Code``` on top of the page and selected ```Download ZIP```. One can also use git to clone the repo to your local machine as ```git clone https://github.com/Mrazi09/LQ_collider_project.git``` in the terminal.
 
 For additional information or questions, feel free to contact me by email (jpedropino@ua.pt or johnppg5@gmail.com)
