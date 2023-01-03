@@ -8,7 +8,7 @@ echo "define j = g u c d s u~ c~ d~ s~ b b~" >> Folder_commands_$i.sh
 echo "define w = w+ w-" >> Folder_commands_$i.sh
 echo "define l = e- e+ mu- mu+" >> Folder_commands_$i.sh
 echo "define v = ve vm ve~ vm~" >> Folder_commands_$i.sh
-echo "p p > w z, (w > l v), (z > l- l+)" >> Folder_commands_$i.sh
+echo "generate p p > w z, (w > l v), (z > l- l+)" >> Folder_commands_$i.sh
 echo "add process p p > w z j, (w > l v), (z > l- l+)" >> Folder_commands_$i.sh
 echo "add process p p > w z j j, (w > l v), (z > l- l+)" >> Folder_commands_$i.sh
 echo "add process p p > w z j j j, (w > l v), (z > l- l+)" >> Folder_commands_$i.sh
