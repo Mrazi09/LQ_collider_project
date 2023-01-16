@@ -15,6 +15,8 @@ Note: For the card generation, data from https://github.com/Mrazi09/Leptoquark-p
 
 **Plots** Folder with various plots, as well as the associated python script (as well as a ```jupyter``` notebook) to draw them
 
+**EVO** Folder with main scripts to run the genetic algorithm. One can opt between accuracy (loss function set to binary cross-entropy) or asimov mode (loss function is defined as the inverse of the Asimov estimate). To jump between the different modes, one must alter the flags inside ```train_signal2.py```.
+
 To download, click on ```<> Code``` on top of the page and select ```Download ZIP```. One can also use git to clone the repo to your local machine as ```git clone https://github.com/Mrazi09/LQ_collider_project.git``` in the terminal.
 
 For additional information or questions, feel free to contact me by email (jpedropino@ua.pt or johnppg5@gmail.com)
