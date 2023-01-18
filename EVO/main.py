@@ -92,8 +92,8 @@ def main():
                   systematic=0.01)
 
     nn_param_choices = {
-        'nb_neurons': [256, 512, 1024, 2048, 4096],
-        'nb_layers': [1, 2, 3, 4, 5, 6, 7, 8],
+        'nb_neurons': [256, 512, 1024, 2048],
+        'nb_layers': [1, 2, 3, 4, 5],
         'initializer':['random_normal','random_uniform','truncated_normal', 'glorot_normal', 'glorot_uniform', 'he_normal', 'he_uniform'],
         'alpha':[1e-3, 1e-5, 1e-7, 1e-9],
         'activation': ['relu', 'elu', 'tanh', 'sigmoid', 'softplus', 'softsign', 'selu'],
