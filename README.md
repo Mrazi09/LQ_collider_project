@@ -19,6 +19,9 @@ Note: For the card generation, data from https://github.com/Mrazi09/Leptoquark-p
 
 **Benchmark_cards** Folder with the benchmark cards for different masses of the lightest leptoquark.
 
+**Gaussian_fits** Guassian fits to the log probability histograms to every observable studied in this work.
+
+
 To download, click on ```<> Code``` on top of the page and select ```Download ZIP```. One can also use git to clone the repo to your local machine as ```git clone https://github.com/Mrazi09/LQ_collider_project.git``` in the terminal.
 
 For additional information or questions, feel free to contact me by email (jpedropino@ua.pt or johnppg5@gmail.com)
