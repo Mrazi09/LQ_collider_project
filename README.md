@@ -21,6 +21,8 @@ Note: For the card generation, data from https://github.com/Mrazi09/Leptoquark-p
 
 **Gaussian_fits** Guassian fits to the log probability histograms to every observable studied in this work.
 
+**Gaussian_fits** Guassian fits to the log probability histograms for observables that offer a separation greater than 5$\sigma$
+
 
 To download, click on ```<> Code``` on top of the page and select ```Download ZIP```. One can also use git to clone the repo to your local machine as ```git clone https://github.com/Mrazi09/LQ_collider_project.git``` in the terminal.
 
