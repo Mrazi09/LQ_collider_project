@@ -19,7 +19,7 @@ Note: For the card generation, data from https://github.com/Mrazi09/Leptoquark-p
 
 **Benchmark_cards** Folder with the benchmark cards for different masses of the lightest leptoquark.
 
-**Gaussian_fits** Guassian fits to the log probability histograms to every observable studied in this work. Also includes a ```jupyter``` notebook that performs the computations named ```Pvalue_root.ipynb``` (inside the Code sub-folder). Requires .csv with the histograms, which is inside this repository in the Data_MadGraph folder 
+**Gaussian_fits** Guassian fits to the log probability histograms to every observable studied in this work. Also includes a ```jupyter``` notebook that performs the computations named ```Pvalue_root.ipynb``` (inside the Code sub-folder). Requires .csv with the histograms, which is inside this repository in the Data_MadGraph/CSV_Data folder 
 
 **Gaussian_fits** Guassian fits to the log probability histograms for observables that offer a separation greater than $5\sigma$
 
