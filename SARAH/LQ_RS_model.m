@@ -59,7 +59,7 @@ LagNoHC = - mu2 conj[H] . H - 1/2 Lambd conj[H] . H . conj[H] . H -\
 LagHC   = - (Yd conj[H] . d . q + Ye conj[H] . e . l + Yu u . q . H - (cw1/(v^2))(H . l) . (l . H));
 
 (*Z2 symmetry protects against di-quark interactions*)
-LagLQ   = - (Theta l . q . conj[S] + Upsilon u . e . S + Omega R . l . d);
+LagLQ   = - (Theta l . q . conj[S] + Upsilon e . u . S + Omega R . l . d);
 
 LagLQV  = - lRRRH R . R . R . conj[H] - lRRS R . R . S - a1 R . conj[S] . conj[H] - RRSS R . conj[S] . conj[R] . S -\
 			lSSHR conj[S] . conj[S] . conj[H] . conj[R];
