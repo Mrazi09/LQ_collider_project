@@ -8,8 +8,9 @@
 #
 #
 
-__date__ = "22 July 2010"
-__author__ = "claude.duhr@durham.ac.uk"
+from __future__ import absolute_import
+__date__ = u"22 July 2010"
+__author__ = u"claude.duhr@durham.ac.uk"
 
 import cmath
 from object_library import all_functions, Function
@@ -18,36 +19,36 @@ from object_library import all_functions, Function
 # shortcuts for functions from cmath
 #
 
-complexconjugate = Function(name = 'complexconjugate',
-                            arguments = ('z',),
-                            expression = 'z.conjugate()')
+complexconjugate = Function(name = u'complexconjugate',
+                            arguments = (u'z',),
+                            expression = u'z.conjugate()')
 
 
-re = Function(name = 're',
-              arguments = ('z',),
-              expression = 'z.real')
+re = Function(name = u're',
+              arguments = (u'z',),
+              expression = u'z.real')
 
-im = Function(name = 'im',
-              arguments = ('z',),
-              expression = 'z.imag')
+im = Function(name = u'im',
+              arguments = (u'z',),
+              expression = u'z.imag')
 
 # New functions (trigonometric)
 
-sec = Function(name = 'sec',
-             arguments = ('z',),
-             expression = '1./cmath.cos(z)')
+sec = Function(name = u'sec',
+             arguments = (u'z',),
+             expression = u'1./cmath.cos(z)')
 
-asec = Function(name = 'asec',
-             arguments = ('z',),
-             expression = 'cmath.acos(1./z)')
+asec = Function(name = u'asec',
+             arguments = (u'z',),
+             expression = u'cmath.acos(1./z)')
 
-csc = Function(name = 'csc',
-             arguments = ('z',),
-             expression = '1./cmath.sin(z)')
+csc = Function(name = u'csc',
+             arguments = (u'z',),
+             expression = u'1./cmath.sin(z)')
 
-acsc = Function(name = 'acsc',
-             arguments = ('z',),
-             expression = 'cmath.asin(1./z)')
+acsc = Function(name = u'acsc',
+             arguments = (u'z',),
+             expression = u'cmath.asin(1./z)')
 
 
 
