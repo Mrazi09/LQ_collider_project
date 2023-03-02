@@ -1060,7 +1060,7 @@ GC_264 = Coupling(name = 'GC_264',
 	 order = {'QED':1} ) 
  
 GC_265 = Coupling(name = 'GC_265',
-	 value = '-1*complex(0,1)*(ZER11*(ZUR11*complexconjugate(Upsilon11) + ZUR12*complexconjugate(Upsilon21) + ZUR13*complexconjugate(Upsilon31)) + ZER12*(ZUR11*complexconjugate(Upsilon12) + ZUR12*complexconjugate(Upsilon22) + ZUR13*complexconjugate(Upsilon32)) + ZER13*(ZUR11*complexconjugate(Upsilon13) + ZUR12*complexconjugate(Upsilon23) + ZUR13*complexconjugate(Upsilon33)))*complexconjugate(ZH11)', 
+	 value = '-1*complex(0,1)*(ZER11*(ZUR11*complexconjugate(Upsilon11) + ZUR12*complexconjugate(Upsilon12) + ZUR13*complexconjugate(Upsilon13)) + ZER12*(ZUR11*complexconjugate(Upsilon21) + ZUR12*complexconjugate(Upsilon22) + ZUR13*complexconjugate(Upsilon23)) + ZER13*(ZUR11*complexconjugate(Upsilon31) + ZUR12*complexconjugate(Upsilon32) + ZUR13*complexconjugate(Upsilon33)))*complexconjugate(ZH11)', 
 	 order = {'QED':1} ) 
  
 GC_266 = Coupling(name = 'GC_266',
@@ -1068,7 +1068,7 @@ GC_266 = Coupling(name = 'GC_266',
 	 order = {'QED':1} ) 
  
 GC_267 = Coupling(name = 'GC_267',
-	 value = '-1*complex(0,1)*(ZER11*(ZUR11*complexconjugate(Upsilon11) + ZUR12*complexconjugate(Upsilon21) + ZUR13*complexconjugate(Upsilon31)) + ZER12*(ZUR11*complexconjugate(Upsilon12) + ZUR12*complexconjugate(Upsilon22) + ZUR13*complexconjugate(Upsilon32)) + ZER13*(ZUR11*complexconjugate(Upsilon13) + ZUR12*complexconjugate(Upsilon23) + ZUR13*complexconjugate(Upsilon33)))*complexconjugate(ZH21)', 
+	 value = '-1*complex(0,1)*(ZER11*(ZUR11*complexconjugate(Upsilon11) + ZUR12*complexconjugate(Upsilon12) + ZUR13*complexconjugate(Upsilon13)) + ZER12*(ZUR11*complexconjugate(Upsilon21) + ZUR12*complexconjugate(Upsilon22) + ZUR13*complexconjugate(Upsilon23)) + ZER13*(ZUR11*complexconjugate(Upsilon31) + ZUR12*complexconjugate(Upsilon32) + ZUR13*complexconjugate(Upsilon33)))*complexconjugate(ZH21)', 
 	 order = {'QED':1} ) 
  
 GC_268 = Coupling(name = 'GC_268',
@@ -1076,7 +1076,7 @@ GC_268 = Coupling(name = 'GC_268',
 	 order = {'QED':1} ) 
  
 GC_269 = Coupling(name = 'GC_269',
-	 value = '-1*complex(0,1)*(ZER11*(ZUR21*complexconjugate(Upsilon11) + ZUR22*complexconjugate(Upsilon21) + ZUR23*complexconjugate(Upsilon31)) + ZER12*(ZUR21*complexconjugate(Upsilon12) + ZUR22*complexconjugate(Upsilon22) + ZUR23*complexconjugate(Upsilon32)) + ZER13*(ZUR21*complexconjugate(Upsilon13) + ZUR22*complexconjugate(Upsilon23) + ZUR23*complexconjugate(Upsilon33)))*complexconjugate(ZH11)', 
+	 value = '-1*complex(0,1)*(ZER11*(ZUR21*complexconjugate(Upsilon11) + ZUR22*complexconjugate(Upsilon12) + ZUR23*complexconjugate(Upsilon13)) + ZER12*(ZUR21*complexconjugate(Upsilon21) + ZUR22*complexconjugate(Upsilon22) + ZUR23*complexconjugate(Upsilon23)) + ZER13*(ZUR21*complexconjugate(Upsilon31) + ZUR22*complexconjugate(Upsilon32) + ZUR23*complexconjugate(Upsilon33)))*complexconjugate(ZH11)', 
 	 order = {'QED':1} ) 
  
 GC_270 = Coupling(name = 'GC_270',
@@ -1084,7 +1084,7 @@ GC_270 = Coupling(name = 'GC_270',
 	 order = {'QED':1} ) 
  
 GC_271 = Coupling(name = 'GC_271',
-	 value = '-1*complex(0,1)*(ZER11*(ZUR21*complexconjugate(Upsilon11) + ZUR22*complexconjugate(Upsilon21) + ZUR23*complexconjugate(Upsilon31)) + ZER12*(ZUR21*complexconjugate(Upsilon12) + ZUR22*complexconjugate(Upsilon22) + ZUR23*complexconjugate(Upsilon32)) + ZER13*(ZUR21*complexconjugate(Upsilon13) + ZUR22*complexconjugate(Upsilon23) + ZUR23*complexconjugate(Upsilon33)))*complexconjugate(ZH21)', 
+	 value = '-1*complex(0,1)*(ZER11*(ZUR21*complexconjugate(Upsilon11) + ZUR22*complexconjugate(Upsilon12) + ZUR23*complexconjugate(Upsilon13)) + ZER12*(ZUR21*complexconjugate(Upsilon21) + ZUR22*complexconjugate(Upsilon22) + ZUR23*complexconjugate(Upsilon23)) + ZER13*(ZUR21*complexconjugate(Upsilon31) + ZUR22*complexconjugate(Upsilon32) + ZUR23*complexconjugate(Upsilon33)))*complexconjugate(ZH21)', 
 	 order = {'QED':1} ) 
  
 GC_272 = Coupling(name = 'GC_272',
@@ -1092,7 +1092,7 @@ GC_272 = Coupling(name = 'GC_272',
 	 order = {'QED':1} ) 
  
 GC_273 = Coupling(name = 'GC_273',
-	 value = '-1*complex(0,1)*(ZER11*(ZUR31*complexconjugate(Upsilon11) + ZUR32*complexconjugate(Upsilon21) + ZUR33*complexconjugate(Upsilon31)) + ZER12*(ZUR31*complexconjugate(Upsilon12) + ZUR32*complexconjugate(Upsilon22) + ZUR33*complexconjugate(Upsilon32)) + ZER13*(ZUR31*complexconjugate(Upsilon13) + ZUR32*complexconjugate(Upsilon23) + ZUR33*complexconjugate(Upsilon33)))*complexconjugate(ZH11)', 
+	 value = '-1*complex(0,1)*(ZER11*(ZUR31*complexconjugate(Upsilon11) + ZUR32*complexconjugate(Upsilon12) + ZUR33*complexconjugate(Upsilon13)) + ZER12*(ZUR31*complexconjugate(Upsilon21) + ZUR32*complexconjugate(Upsilon22) + ZUR33*complexconjugate(Upsilon23)) + ZER13*(ZUR31*complexconjugate(Upsilon31) + ZUR32*complexconjugate(Upsilon32) + ZUR33*complexconjugate(Upsilon33)))*complexconjugate(ZH11)', 
 	 order = {'QED':1} ) 
  
 GC_274 = Coupling(name = 'GC_274',
@@ -1100,7 +1100,7 @@ GC_274 = Coupling(name = 'GC_274',
 	 order = {'QED':1} ) 
  
 GC_275 = Coupling(name = 'GC_275',
-	 value = '-1*complex(0,1)*(ZER11*(ZUR31*complexconjugate(Upsilon11) + ZUR32*complexconjugate(Upsilon21) + ZUR33*complexconjugate(Upsilon31)) + ZER12*(ZUR31*complexconjugate(Upsilon12) + ZUR32*complexconjugate(Upsilon22) + ZUR33*complexconjugate(Upsilon32)) + ZER13*(ZUR31*complexconjugate(Upsilon13) + ZUR32*complexconjugate(Upsilon23) + ZUR33*complexconjugate(Upsilon33)))*complexconjugate(ZH21)', 
+	 value = '-1*complex(0,1)*(ZER11*(ZUR31*complexconjugate(Upsilon11) + ZUR32*complexconjugate(Upsilon12) + ZUR33*complexconjugate(Upsilon13)) + ZER12*(ZUR31*complexconjugate(Upsilon21) + ZUR32*complexconjugate(Upsilon22) + ZUR33*complexconjugate(Upsilon23)) + ZER13*(ZUR31*complexconjugate(Upsilon31) + ZUR32*complexconjugate(Upsilon32) + ZUR33*complexconjugate(Upsilon33)))*complexconjugate(ZH21)', 
 	 order = {'QED':1} ) 
  
 GC_276 = Coupling(name = 'GC_276',
@@ -1108,7 +1108,7 @@ GC_276 = Coupling(name = 'GC_276',
 	 order = {'QED':1} ) 
  
 GC_277 = Coupling(name = 'GC_277',
-	 value = '-1*complex(0,1)*(ZER21*(ZUR11*complexconjugate(Upsilon11) + ZUR12*complexconjugate(Upsilon21) + ZUR13*complexconjugate(Upsilon31)) + ZER22*(ZUR11*complexconjugate(Upsilon12) + ZUR12*complexconjugate(Upsilon22) + ZUR13*complexconjugate(Upsilon32)) + ZER23*(ZUR11*complexconjugate(Upsilon13) + ZUR12*complexconjugate(Upsilon23) + ZUR13*complexconjugate(Upsilon33)))*complexconjugate(ZH11)', 
+	 value = '-1*complex(0,1)*(ZER21*(ZUR11*complexconjugate(Upsilon11) + ZUR12*complexconjugate(Upsilon12) + ZUR13*complexconjugate(Upsilon13)) + ZER22*(ZUR11*complexconjugate(Upsilon21) + ZUR12*complexconjugate(Upsilon22) + ZUR13*complexconjugate(Upsilon23)) + ZER23*(ZUR11*complexconjugate(Upsilon31) + ZUR12*complexconjugate(Upsilon32) + ZUR13*complexconjugate(Upsilon33)))*complexconjugate(ZH11)', 
 	 order = {'QED':1} ) 
  
 GC_278 = Coupling(name = 'GC_278',
@@ -1116,7 +1116,7 @@ GC_278 = Coupling(name = 'GC_278',
 	 order = {'QED':1} ) 
  
 GC_279 = Coupling(name = 'GC_279',
-	 value = '-1*complex(0,1)*(ZER21*(ZUR11*complexconjugate(Upsilon11) + ZUR12*complexconjugate(Upsilon21) + ZUR13*complexconjugate(Upsilon31)) + ZER22*(ZUR11*complexconjugate(Upsilon12) + ZUR12*complexconjugate(Upsilon22) + ZUR13*complexconjugate(Upsilon32)) + ZER23*(ZUR11*complexconjugate(Upsilon13) + ZUR12*complexconjugate(Upsilon23) + ZUR13*complexconjugate(Upsilon33)))*complexconjugate(ZH21)', 
+	 value = '-1*complex(0,1)*(ZER21*(ZUR11*complexconjugate(Upsilon11) + ZUR12*complexconjugate(Upsilon12) + ZUR13*complexconjugate(Upsilon13)) + ZER22*(ZUR11*complexconjugate(Upsilon21) + ZUR12*complexconjugate(Upsilon22) + ZUR13*complexconjugate(Upsilon23)) + ZER23*(ZUR11*complexconjugate(Upsilon31) + ZUR12*complexconjugate(Upsilon32) + ZUR13*complexconjugate(Upsilon33)))*complexconjugate(ZH21)', 
 	 order = {'QED':1} ) 
  
 GC_280 = Coupling(name = 'GC_280',
@@ -1124,7 +1124,7 @@ GC_280 = Coupling(name = 'GC_280',
 	 order = {'QED':1} ) 
  
 GC_281 = Coupling(name = 'GC_281',
-	 value = '-1*complex(0,1)*(ZER21*(ZUR21*complexconjugate(Upsilon11) + ZUR22*complexconjugate(Upsilon21) + ZUR23*complexconjugate(Upsilon31)) + ZER22*(ZUR21*complexconjugate(Upsilon12) + ZUR22*complexconjugate(Upsilon22) + ZUR23*complexconjugate(Upsilon32)) + ZER23*(ZUR21*complexconjugate(Upsilon13) + ZUR22*complexconjugate(Upsilon23) + ZUR23*complexconjugate(Upsilon33)))*complexconjugate(ZH11)', 
+	 value = '-1*complex(0,1)*(ZER21*(ZUR21*complexconjugate(Upsilon11) + ZUR22*complexconjugate(Upsilon12) + ZUR23*complexconjugate(Upsilon13)) + ZER22*(ZUR21*complexconjugate(Upsilon21) + ZUR22*complexconjugate(Upsilon22) + ZUR23*complexconjugate(Upsilon23)) + ZER23*(ZUR21*complexconjugate(Upsilon31) + ZUR22*complexconjugate(Upsilon32) + ZUR23*complexconjugate(Upsilon33)))*complexconjugate(ZH11)', 
 	 order = {'QED':1} ) 
  
 GC_282 = Coupling(name = 'GC_282',
@@ -1132,7 +1132,7 @@ GC_282 = Coupling(name = 'GC_282',
 	 order = {'QED':1} ) 
  
 GC_283 = Coupling(name = 'GC_283',
-	 value = '-1*complex(0,1)*(ZER21*(ZUR21*complexconjugate(Upsilon11) + ZUR22*complexconjugate(Upsilon21) + ZUR23*complexconjugate(Upsilon31)) + ZER22*(ZUR21*complexconjugate(Upsilon12) + ZUR22*complexconjugate(Upsilon22) + ZUR23*complexconjugate(Upsilon32)) + ZER23*(ZUR21*complexconjugate(Upsilon13) + ZUR22*complexconjugate(Upsilon23) + ZUR23*complexconjugate(Upsilon33)))*complexconjugate(ZH21)', 
+	 value = '-1*complex(0,1)*(ZER21*(ZUR21*complexconjugate(Upsilon11) + ZUR22*complexconjugate(Upsilon12) + ZUR23*complexconjugate(Upsilon13)) + ZER22*(ZUR21*complexconjugate(Upsilon21) + ZUR22*complexconjugate(Upsilon22) + ZUR23*complexconjugate(Upsilon23)) + ZER23*(ZUR21*complexconjugate(Upsilon31) + ZUR22*complexconjugate(Upsilon32) + ZUR23*complexconjugate(Upsilon33)))*complexconjugate(ZH21)', 
 	 order = {'QED':1} ) 
  
 GC_284 = Coupling(name = 'GC_284',
@@ -1140,7 +1140,7 @@ GC_284 = Coupling(name = 'GC_284',
 	 order = {'QED':1} ) 
  
 GC_285 = Coupling(name = 'GC_285',
-	 value = '-1*complex(0,1)*(ZER21*(ZUR31*complexconjugate(Upsilon11) + ZUR32*complexconjugate(Upsilon21) + ZUR33*complexconjugate(Upsilon31)) + ZER22*(ZUR31*complexconjugate(Upsilon12) + ZUR32*complexconjugate(Upsilon22) + ZUR33*complexconjugate(Upsilon32)) + ZER23*(ZUR31*complexconjugate(Upsilon13) + ZUR32*complexconjugate(Upsilon23) + ZUR33*complexconjugate(Upsilon33)))*complexconjugate(ZH11)', 
+	 value = '-1*complex(0,1)*(ZER21*(ZUR31*complexconjugate(Upsilon11) + ZUR32*complexconjugate(Upsilon12) + ZUR33*complexconjugate(Upsilon13)) + ZER22*(ZUR31*complexconjugate(Upsilon21) + ZUR32*complexconjugate(Upsilon22) + ZUR33*complexconjugate(Upsilon23)) + ZER23*(ZUR31*complexconjugate(Upsilon31) + ZUR32*complexconjugate(Upsilon32) + ZUR33*complexconjugate(Upsilon33)))*complexconjugate(ZH11)', 
 	 order = {'QED':1} ) 
  
 GC_286 = Coupling(name = 'GC_286',
@@ -1148,7 +1148,7 @@ GC_286 = Coupling(name = 'GC_286',
 	 order = {'QED':1} ) 
  
 GC_287 = Coupling(name = 'GC_287',
-	 value = '-1*complex(0,1)*(ZER21*(ZUR31*complexconjugate(Upsilon11) + ZUR32*complexconjugate(Upsilon21) + ZUR33*complexconjugate(Upsilon31)) + ZER22*(ZUR31*complexconjugate(Upsilon12) + ZUR32*complexconjugate(Upsilon22) + ZUR33*complexconjugate(Upsilon32)) + ZER23*(ZUR31*complexconjugate(Upsilon13) + ZUR32*complexconjugate(Upsilon23) + ZUR33*complexconjugate(Upsilon33)))*complexconjugate(ZH21)', 
+	 value = '-1*complex(0,1)*(ZER21*(ZUR31*complexconjugate(Upsilon11) + ZUR32*complexconjugate(Upsilon12) + ZUR33*complexconjugate(Upsilon13)) + ZER22*(ZUR31*complexconjugate(Upsilon21) + ZUR32*complexconjugate(Upsilon22) + ZUR33*complexconjugate(Upsilon23)) + ZER23*(ZUR31*complexconjugate(Upsilon31) + ZUR32*complexconjugate(Upsilon32) + ZUR33*complexconjugate(Upsilon33)))*complexconjugate(ZH21)', 
 	 order = {'QED':1} ) 
  
 GC_288 = Coupling(name = 'GC_288',
@@ -1156,7 +1156,7 @@ GC_288 = Coupling(name = 'GC_288',
 	 order = {'QED':1} ) 
  
 GC_289 = Coupling(name = 'GC_289',
-	 value = '-1*complex(0,1)*(ZER31*(ZUR11*complexconjugate(Upsilon11) + ZUR12*complexconjugate(Upsilon21) + ZUR13*complexconjugate(Upsilon31)) + ZER32*(ZUR11*complexconjugate(Upsilon12) + ZUR12*complexconjugate(Upsilon22) + ZUR13*complexconjugate(Upsilon32)) + ZER33*(ZUR11*complexconjugate(Upsilon13) + ZUR12*complexconjugate(Upsilon23) + ZUR13*complexconjugate(Upsilon33)))*complexconjugate(ZH11)', 
+	 value = '-1*complex(0,1)*(ZER31*(ZUR11*complexconjugate(Upsilon11) + ZUR12*complexconjugate(Upsilon12) + ZUR13*complexconjugate(Upsilon13)) + ZER32*(ZUR11*complexconjugate(Upsilon21) + ZUR12*complexconjugate(Upsilon22) + ZUR13*complexconjugate(Upsilon23)) + ZER33*(ZUR11*complexconjugate(Upsilon31) + ZUR12*complexconjugate(Upsilon32) + ZUR13*complexconjugate(Upsilon33)))*complexconjugate(ZH11)', 
 	 order = {'QED':1} ) 
  
 GC_290 = Coupling(name = 'GC_290',
@@ -1164,7 +1164,7 @@ GC_290 = Coupling(name = 'GC_290',
 	 order = {'QED':1} ) 
  
 GC_291 = Coupling(name = 'GC_291',
-	 value = '-1*complex(0,1)*(ZER31*(ZUR11*complexconjugate(Upsilon11) + ZUR12*complexconjugate(Upsilon21) + ZUR13*complexconjugate(Upsilon31)) + ZER32*(ZUR11*complexconjugate(Upsilon12) + ZUR12*complexconjugate(Upsilon22) + ZUR13*complexconjugate(Upsilon32)) + ZER33*(ZUR11*complexconjugate(Upsilon13) + ZUR12*complexconjugate(Upsilon23) + ZUR13*complexconjugate(Upsilon33)))*complexconjugate(ZH21)', 
+	 value = '-1*complex(0,1)*(ZER31*(ZUR11*complexconjugate(Upsilon11) + ZUR12*complexconjugate(Upsilon12) + ZUR13*complexconjugate(Upsilon13)) + ZER32*(ZUR11*complexconjugate(Upsilon21) + ZUR12*complexconjugate(Upsilon22) + ZUR13*complexconjugate(Upsilon23)) + ZER33*(ZUR11*complexconjugate(Upsilon31) + ZUR12*complexconjugate(Upsilon32) + ZUR13*complexconjugate(Upsilon33)))*complexconjugate(ZH21)', 
 	 order = {'QED':1} ) 
  
 GC_292 = Coupling(name = 'GC_292',
@@ -1172,7 +1172,7 @@ GC_292 = Coupling(name = 'GC_292',
 	 order = {'QED':1} ) 
  
 GC_293 = Coupling(name = 'GC_293',
-	 value = '-1*complex(0,1)*(ZER31*(ZUR21*complexconjugate(Upsilon11) + ZUR22*complexconjugate(Upsilon21) + ZUR23*complexconjugate(Upsilon31)) + ZER32*(ZUR21*complexconjugate(Upsilon12) + ZUR22*complexconjugate(Upsilon22) + ZUR23*complexconjugate(Upsilon32)) + ZER33*(ZUR21*complexconjugate(Upsilon13) + ZUR22*complexconjugate(Upsilon23) + ZUR23*complexconjugate(Upsilon33)))*complexconjugate(ZH11)', 
+	 value = '-1*complex(0,1)*(ZER31*(ZUR21*complexconjugate(Upsilon11) + ZUR22*complexconjugate(Upsilon12) + ZUR23*complexconjugate(Upsilon13)) + ZER32*(ZUR21*complexconjugate(Upsilon21) + ZUR22*complexconjugate(Upsilon22) + ZUR23*complexconjugate(Upsilon23)) + ZER33*(ZUR21*complexconjugate(Upsilon31) + ZUR22*complexconjugate(Upsilon32) + ZUR23*complexconjugate(Upsilon33)))*complexconjugate(ZH11)', 
 	 order = {'QED':1} ) 
  
 GC_294 = Coupling(name = 'GC_294',
@@ -1180,7 +1180,7 @@ GC_294 = Coupling(name = 'GC_294',
 	 order = {'QED':1} ) 
  
 GC_295 = Coupling(name = 'GC_295',
-	 value = '-1*complex(0,1)*(ZER31*(ZUR21*complexconjugate(Upsilon11) + ZUR22*complexconjugate(Upsilon21) + ZUR23*complexconjugate(Upsilon31)) + ZER32*(ZUR21*complexconjugate(Upsilon12) + ZUR22*complexconjugate(Upsilon22) + ZUR23*complexconjugate(Upsilon32)) + ZER33*(ZUR21*complexconjugate(Upsilon13) + ZUR22*complexconjugate(Upsilon23) + ZUR23*complexconjugate(Upsilon33)))*complexconjugate(ZH21)', 
+	 value = '-1*complex(0,1)*(ZER31*(ZUR21*complexconjugate(Upsilon11) + ZUR22*complexconjugate(Upsilon12) + ZUR23*complexconjugate(Upsilon13)) + ZER32*(ZUR21*complexconjugate(Upsilon21) + ZUR22*complexconjugate(Upsilon22) + ZUR23*complexconjugate(Upsilon23)) + ZER33*(ZUR21*complexconjugate(Upsilon31) + ZUR22*complexconjugate(Upsilon32) + ZUR23*complexconjugate(Upsilon33)))*complexconjugate(ZH21)', 
 	 order = {'QED':1} ) 
  
 GC_296 = Coupling(name = 'GC_296',
@@ -1188,7 +1188,7 @@ GC_296 = Coupling(name = 'GC_296',
 	 order = {'QED':1} ) 
  
 GC_297 = Coupling(name = 'GC_297',
-	 value = '-1*complex(0,1)*(ZER31*(ZUR31*complexconjugate(Upsilon11) + ZUR32*complexconjugate(Upsilon21) + ZUR33*complexconjugate(Upsilon31)) + ZER32*(ZUR31*complexconjugate(Upsilon12) + ZUR32*complexconjugate(Upsilon22) + ZUR33*complexconjugate(Upsilon32)) + ZER33*(ZUR31*complexconjugate(Upsilon13) + ZUR32*complexconjugate(Upsilon23) + ZUR33*complexconjugate(Upsilon33)))*complexconjugate(ZH11)', 
+	 value = '-1*complex(0,1)*(ZER31*(ZUR31*complexconjugate(Upsilon11) + ZUR32*complexconjugate(Upsilon12) + ZUR33*complexconjugate(Upsilon13)) + ZER32*(ZUR31*complexconjugate(Upsilon21) + ZUR32*complexconjugate(Upsilon22) + ZUR33*complexconjugate(Upsilon23)) + ZER33*(ZUR31*complexconjugate(Upsilon31) + ZUR32*complexconjugate(Upsilon32) + ZUR33*complexconjugate(Upsilon33)))*complexconjugate(ZH11)', 
 	 order = {'QED':1} ) 
  
 GC_298 = Coupling(name = 'GC_298',
@@ -1196,7 +1196,7 @@ GC_298 = Coupling(name = 'GC_298',
 	 order = {'QED':1} ) 
  
 GC_299 = Coupling(name = 'GC_299',
-	 value = '-1*complex(0,1)*(ZER31*(ZUR31*complexconjugate(Upsilon11) + ZUR32*complexconjugate(Upsilon21) + ZUR33*complexconjugate(Upsilon31)) + ZER32*(ZUR31*complexconjugate(Upsilon12) + ZUR32*complexconjugate(Upsilon22) + ZUR33*complexconjugate(Upsilon32)) + ZER33*(ZUR31*complexconjugate(Upsilon13) + ZUR32*complexconjugate(Upsilon23) + ZUR33*complexconjugate(Upsilon33)))*complexconjugate(ZH21)', 
+	 value = '-1*complex(0,1)*(ZER31*(ZUR31*complexconjugate(Upsilon11) + ZUR32*complexconjugate(Upsilon12) + ZUR33*complexconjugate(Upsilon13)) + ZER32*(ZUR31*complexconjugate(Upsilon21) + ZUR32*complexconjugate(Upsilon22) + ZUR33*complexconjugate(Upsilon23)) + ZER33*(ZUR31*complexconjugate(Upsilon31) + ZUR32*complexconjugate(Upsilon32) + ZUR33*complexconjugate(Upsilon33)))*complexconjugate(ZH21)', 
 	 order = {'QED':1} ) 
  
 GC_300 = Coupling(name = 'GC_300',
@@ -1788,7 +1788,7 @@ GC_446 = Coupling(name = 'GC_446',
 	 order = {'QED':1} ) 
  
 GC_447 = Coupling(name = 'GC_447',
-	 value = '-1*complex(0,1)*ZH11*(complexconjugate(ZER11)*(Upsilon11*complexconjugate(ZUR11) + Upsilon21*complexconjugate(ZUR12) + Upsilon31*complexconjugate(ZUR13)) + complexconjugate(ZER12)*(Upsilon12*complexconjugate(ZUR11) + Upsilon22*complexconjugate(ZUR12) + Upsilon32*complexconjugate(ZUR13)) + complexconjugate(ZER13)*(Upsilon13*complexconjugate(ZUR11) + Upsilon23*complexconjugate(ZUR12) + Upsilon33*complexconjugate(ZUR13)))', 
+	 value = '-1*complex(0,1)*ZH11*(complexconjugate(ZER11)*(Upsilon11*complexconjugate(ZUR11) + Upsilon12*complexconjugate(ZUR12) + Upsilon13*complexconjugate(ZUR13)) + complexconjugate(ZER12)*(Upsilon21*complexconjugate(ZUR11) + Upsilon22*complexconjugate(ZUR12) + Upsilon23*complexconjugate(ZUR13)) + complexconjugate(ZER13)*(Upsilon31*complexconjugate(ZUR11) + Upsilon32*complexconjugate(ZUR12) + Upsilon33*complexconjugate(ZUR13)))', 
 	 order = {'QED':1} ) 
  
 GC_448 = Coupling(name = 'GC_448',
@@ -1796,7 +1796,7 @@ GC_448 = Coupling(name = 'GC_448',
 	 order = {'QED':1} ) 
  
 GC_449 = Coupling(name = 'GC_449',
-	 value = '-1*complex(0,1)*ZH21*(complexconjugate(ZER11)*(Upsilon11*complexconjugate(ZUR11) + Upsilon21*complexconjugate(ZUR12) + Upsilon31*complexconjugate(ZUR13)) + complexconjugate(ZER12)*(Upsilon12*complexconjugate(ZUR11) + Upsilon22*complexconjugate(ZUR12) + Upsilon32*complexconjugate(ZUR13)) + complexconjugate(ZER13)*(Upsilon13*complexconjugate(ZUR11) + Upsilon23*complexconjugate(ZUR12) + Upsilon33*complexconjugate(ZUR13)))', 
+	 value = '-1*complex(0,1)*ZH21*(complexconjugate(ZER11)*(Upsilon11*complexconjugate(ZUR11) + Upsilon12*complexconjugate(ZUR12) + Upsilon13*complexconjugate(ZUR13)) + complexconjugate(ZER12)*(Upsilon21*complexconjugate(ZUR11) + Upsilon22*complexconjugate(ZUR12) + Upsilon23*complexconjugate(ZUR13)) + complexconjugate(ZER13)*(Upsilon31*complexconjugate(ZUR11) + Upsilon32*complexconjugate(ZUR12) + Upsilon33*complexconjugate(ZUR13)))', 
 	 order = {'QED':1} ) 
  
 GC_450 = Coupling(name = 'GC_450',
@@ -1804,7 +1804,7 @@ GC_450 = Coupling(name = 'GC_450',
 	 order = {'QED':1} ) 
  
 GC_451 = Coupling(name = 'GC_451',
-	 value = '-1*complex(0,1)*ZH11*(complexconjugate(ZER11)*(Upsilon11*complexconjugate(ZUR21) + Upsilon21*complexconjugate(ZUR22) + Upsilon31*complexconjugate(ZUR23)) + complexconjugate(ZER12)*(Upsilon12*complexconjugate(ZUR21) + Upsilon22*complexconjugate(ZUR22) + Upsilon32*complexconjugate(ZUR23)) + complexconjugate(ZER13)*(Upsilon13*complexconjugate(ZUR21) + Upsilon23*complexconjugate(ZUR22) + Upsilon33*complexconjugate(ZUR23)))', 
+	 value = '-1*complex(0,1)*ZH11*(complexconjugate(ZER11)*(Upsilon11*complexconjugate(ZUR21) + Upsilon12*complexconjugate(ZUR22) + Upsilon13*complexconjugate(ZUR23)) + complexconjugate(ZER12)*(Upsilon21*complexconjugate(ZUR21) + Upsilon22*complexconjugate(ZUR22) + Upsilon23*complexconjugate(ZUR23)) + complexconjugate(ZER13)*(Upsilon31*complexconjugate(ZUR21) + Upsilon32*complexconjugate(ZUR22) + Upsilon33*complexconjugate(ZUR23)))', 
 	 order = {'QED':1} ) 
  
 GC_452 = Coupling(name = 'GC_452',
@@ -1812,7 +1812,7 @@ GC_452 = Coupling(name = 'GC_452',
 	 order = {'QED':1} ) 
  
 GC_453 = Coupling(name = 'GC_453',
-	 value = '-1*complex(0,1)*ZH21*(complexconjugate(ZER11)*(Upsilon11*complexconjugate(ZUR21) + Upsilon21*complexconjugate(ZUR22) + Upsilon31*complexconjugate(ZUR23)) + complexconjugate(ZER12)*(Upsilon12*complexconjugate(ZUR21) + Upsilon22*complexconjugate(ZUR22) + Upsilon32*complexconjugate(ZUR23)) + complexconjugate(ZER13)*(Upsilon13*complexconjugate(ZUR21) + Upsilon23*complexconjugate(ZUR22) + Upsilon33*complexconjugate(ZUR23)))', 
+	 value = '-1*complex(0,1)*ZH21*(complexconjugate(ZER11)*(Upsilon11*complexconjugate(ZUR21) + Upsilon12*complexconjugate(ZUR22) + Upsilon13*complexconjugate(ZUR23)) + complexconjugate(ZER12)*(Upsilon21*complexconjugate(ZUR21) + Upsilon22*complexconjugate(ZUR22) + Upsilon23*complexconjugate(ZUR23)) + complexconjugate(ZER13)*(Upsilon31*complexconjugate(ZUR21) + Upsilon32*complexconjugate(ZUR22) + Upsilon33*complexconjugate(ZUR23)))', 
 	 order = {'QED':1} ) 
  
 GC_454 = Coupling(name = 'GC_454',
@@ -1820,7 +1820,7 @@ GC_454 = Coupling(name = 'GC_454',
 	 order = {'QED':1} ) 
  
 GC_455 = Coupling(name = 'GC_455',
-	 value = '-1*complex(0,1)*ZH11*(complexconjugate(ZER11)*(Upsilon11*complexconjugate(ZUR31) + Upsilon21*complexconjugate(ZUR32) + Upsilon31*complexconjugate(ZUR33)) + complexconjugate(ZER12)*(Upsilon12*complexconjugate(ZUR31) + Upsilon22*complexconjugate(ZUR32) + Upsilon32*complexconjugate(ZUR33)) + complexconjugate(ZER13)*(Upsilon13*complexconjugate(ZUR31) + Upsilon23*complexconjugate(ZUR32) + Upsilon33*complexconjugate(ZUR33)))', 
+	 value = '-1*complex(0,1)*ZH11*(complexconjugate(ZER11)*(Upsilon11*complexconjugate(ZUR31) + Upsilon12*complexconjugate(ZUR32) + Upsilon13*complexconjugate(ZUR33)) + complexconjugate(ZER12)*(Upsilon21*complexconjugate(ZUR31) + Upsilon22*complexconjugate(ZUR32) + Upsilon23*complexconjugate(ZUR33)) + complexconjugate(ZER13)*(Upsilon31*complexconjugate(ZUR31) + Upsilon32*complexconjugate(ZUR32) + Upsilon33*complexconjugate(ZUR33)))', 
 	 order = {'QED':1} ) 
  
 GC_456 = Coupling(name = 'GC_456',
@@ -1828,7 +1828,7 @@ GC_456 = Coupling(name = 'GC_456',
 	 order = {'QED':1} ) 
  
 GC_457 = Coupling(name = 'GC_457',
-	 value = '-1*complex(0,1)*ZH21*(complexconjugate(ZER11)*(Upsilon11*complexconjugate(ZUR31) + Upsilon21*complexconjugate(ZUR32) + Upsilon31*complexconjugate(ZUR33)) + complexconjugate(ZER12)*(Upsilon12*complexconjugate(ZUR31) + Upsilon22*complexconjugate(ZUR32) + Upsilon32*complexconjugate(ZUR33)) + complexconjugate(ZER13)*(Upsilon13*complexconjugate(ZUR31) + Upsilon23*complexconjugate(ZUR32) + Upsilon33*complexconjugate(ZUR33)))', 
+	 value = '-1*complex(0,1)*ZH21*(complexconjugate(ZER11)*(Upsilon11*complexconjugate(ZUR31) + Upsilon12*complexconjugate(ZUR32) + Upsilon13*complexconjugate(ZUR33)) + complexconjugate(ZER12)*(Upsilon21*complexconjugate(ZUR31) + Upsilon22*complexconjugate(ZUR32) + Upsilon23*complexconjugate(ZUR33)) + complexconjugate(ZER13)*(Upsilon31*complexconjugate(ZUR31) + Upsilon32*complexconjugate(ZUR32) + Upsilon33*complexconjugate(ZUR33)))', 
 	 order = {'QED':1} ) 
  
 GC_458 = Coupling(name = 'GC_458',
@@ -1836,7 +1836,7 @@ GC_458 = Coupling(name = 'GC_458',
 	 order = {'QED':1} ) 
  
 GC_459 = Coupling(name = 'GC_459',
-	 value = '-1*complex(0,1)*ZH11*(complexconjugate(ZER21)*(Upsilon11*complexconjugate(ZUR11) + Upsilon21*complexconjugate(ZUR12) + Upsilon31*complexconjugate(ZUR13)) + complexconjugate(ZER22)*(Upsilon12*complexconjugate(ZUR11) + Upsilon22*complexconjugate(ZUR12) + Upsilon32*complexconjugate(ZUR13)) + complexconjugate(ZER23)*(Upsilon13*complexconjugate(ZUR11) + Upsilon23*complexconjugate(ZUR12) + Upsilon33*complexconjugate(ZUR13)))', 
+	 value = '-1*complex(0,1)*ZH11*(complexconjugate(ZER21)*(Upsilon11*complexconjugate(ZUR11) + Upsilon12*complexconjugate(ZUR12) + Upsilon13*complexconjugate(ZUR13)) + complexconjugate(ZER22)*(Upsilon21*complexconjugate(ZUR11) + Upsilon22*complexconjugate(ZUR12) + Upsilon23*complexconjugate(ZUR13)) + complexconjugate(ZER23)*(Upsilon31*complexconjugate(ZUR11) + Upsilon32*complexconjugate(ZUR12) + Upsilon33*complexconjugate(ZUR13)))', 
 	 order = {'QED':1} ) 
  
 GC_460 = Coupling(name = 'GC_460',
@@ -1844,7 +1844,7 @@ GC_460 = Coupling(name = 'GC_460',
 	 order = {'QED':1} ) 
  
 GC_461 = Coupling(name = 'GC_461',
-	 value = '-1*complex(0,1)*ZH21*(complexconjugate(ZER21)*(Upsilon11*complexconjugate(ZUR11) + Upsilon21*complexconjugate(ZUR12) + Upsilon31*complexconjugate(ZUR13)) + complexconjugate(ZER22)*(Upsilon12*complexconjugate(ZUR11) + Upsilon22*complexconjugate(ZUR12) + Upsilon32*complexconjugate(ZUR13)) + complexconjugate(ZER23)*(Upsilon13*complexconjugate(ZUR11) + Upsilon23*complexconjugate(ZUR12) + Upsilon33*complexconjugate(ZUR13)))', 
+	 value = '-1*complex(0,1)*ZH21*(complexconjugate(ZER21)*(Upsilon11*complexconjugate(ZUR11) + Upsilon12*complexconjugate(ZUR12) + Upsilon13*complexconjugate(ZUR13)) + complexconjugate(ZER22)*(Upsilon21*complexconjugate(ZUR11) + Upsilon22*complexconjugate(ZUR12) + Upsilon23*complexconjugate(ZUR13)) + complexconjugate(ZER23)*(Upsilon31*complexconjugate(ZUR11) + Upsilon32*complexconjugate(ZUR12) + Upsilon33*complexconjugate(ZUR13)))', 
 	 order = {'QED':1} ) 
  
 GC_462 = Coupling(name = 'GC_462',
@@ -1852,7 +1852,7 @@ GC_462 = Coupling(name = 'GC_462',
 	 order = {'QED':1} ) 
  
 GC_463 = Coupling(name = 'GC_463',
-	 value = '-1*complex(0,1)*ZH11*(complexconjugate(ZER21)*(Upsilon11*complexconjugate(ZUR21) + Upsilon21*complexconjugate(ZUR22) + Upsilon31*complexconjugate(ZUR23)) + complexconjugate(ZER22)*(Upsilon12*complexconjugate(ZUR21) + Upsilon22*complexconjugate(ZUR22) + Upsilon32*complexconjugate(ZUR23)) + complexconjugate(ZER23)*(Upsilon13*complexconjugate(ZUR21) + Upsilon23*complexconjugate(ZUR22) + Upsilon33*complexconjugate(ZUR23)))', 
+	 value = '-1*complex(0,1)*ZH11*(complexconjugate(ZER21)*(Upsilon11*complexconjugate(ZUR21) + Upsilon12*complexconjugate(ZUR22) + Upsilon13*complexconjugate(ZUR23)) + complexconjugate(ZER22)*(Upsilon21*complexconjugate(ZUR21) + Upsilon22*complexconjugate(ZUR22) + Upsilon23*complexconjugate(ZUR23)) + complexconjugate(ZER23)*(Upsilon31*complexconjugate(ZUR21) + Upsilon32*complexconjugate(ZUR22) + Upsilon33*complexconjugate(ZUR23)))', 
 	 order = {'QED':1} ) 
  
 GC_464 = Coupling(name = 'GC_464',
@@ -1860,7 +1860,7 @@ GC_464 = Coupling(name = 'GC_464',
 	 order = {'QED':1} ) 
  
 GC_465 = Coupling(name = 'GC_465',
-	 value = '-1*complex(0,1)*ZH21*(complexconjugate(ZER21)*(Upsilon11*complexconjugate(ZUR21) + Upsilon21*complexconjugate(ZUR22) + Upsilon31*complexconjugate(ZUR23)) + complexconjugate(ZER22)*(Upsilon12*complexconjugate(ZUR21) + Upsilon22*complexconjugate(ZUR22) + Upsilon32*complexconjugate(ZUR23)) + complexconjugate(ZER23)*(Upsilon13*complexconjugate(ZUR21) + Upsilon23*complexconjugate(ZUR22) + Upsilon33*complexconjugate(ZUR23)))', 
+	 value = '-1*complex(0,1)*ZH21*(complexconjugate(ZER21)*(Upsilon11*complexconjugate(ZUR21) + Upsilon12*complexconjugate(ZUR22) + Upsilon13*complexconjugate(ZUR23)) + complexconjugate(ZER22)*(Upsilon21*complexconjugate(ZUR21) + Upsilon22*complexconjugate(ZUR22) + Upsilon23*complexconjugate(ZUR23)) + complexconjugate(ZER23)*(Upsilon31*complexconjugate(ZUR21) + Upsilon32*complexconjugate(ZUR22) + Upsilon33*complexconjugate(ZUR23)))', 
 	 order = {'QED':1} ) 
  
 GC_466 = Coupling(name = 'GC_466',
@@ -1868,7 +1868,7 @@ GC_466 = Coupling(name = 'GC_466',
 	 order = {'QED':1} ) 
  
 GC_467 = Coupling(name = 'GC_467',
-	 value = '-1*complex(0,1)*ZH11*(complexconjugate(ZER21)*(Upsilon11*complexconjugate(ZUR31) + Upsilon21*complexconjugate(ZUR32) + Upsilon31*complexconjugate(ZUR33)) + complexconjugate(ZER22)*(Upsilon12*complexconjugate(ZUR31) + Upsilon22*complexconjugate(ZUR32) + Upsilon32*complexconjugate(ZUR33)) + complexconjugate(ZER23)*(Upsilon13*complexconjugate(ZUR31) + Upsilon23*complexconjugate(ZUR32) + Upsilon33*complexconjugate(ZUR33)))', 
+	 value = '-1*complex(0,1)*ZH11*(complexconjugate(ZER21)*(Upsilon11*complexconjugate(ZUR31) + Upsilon12*complexconjugate(ZUR32) + Upsilon13*complexconjugate(ZUR33)) + complexconjugate(ZER22)*(Upsilon21*complexconjugate(ZUR31) + Upsilon22*complexconjugate(ZUR32) + Upsilon23*complexconjugate(ZUR33)) + complexconjugate(ZER23)*(Upsilon31*complexconjugate(ZUR31) + Upsilon32*complexconjugate(ZUR32) + Upsilon33*complexconjugate(ZUR33)))', 
 	 order = {'QED':1} ) 
  
 GC_468 = Coupling(name = 'GC_468',
@@ -1876,7 +1876,7 @@ GC_468 = Coupling(name = 'GC_468',
 	 order = {'QED':1} ) 
  
 GC_469 = Coupling(name = 'GC_469',
-	 value = '-1*complex(0,1)*ZH21*(complexconjugate(ZER21)*(Upsilon11*complexconjugate(ZUR31) + Upsilon21*complexconjugate(ZUR32) + Upsilon31*complexconjugate(ZUR33)) + complexconjugate(ZER22)*(Upsilon12*complexconjugate(ZUR31) + Upsilon22*complexconjugate(ZUR32) + Upsilon32*complexconjugate(ZUR33)) + complexconjugate(ZER23)*(Upsilon13*complexconjugate(ZUR31) + Upsilon23*complexconjugate(ZUR32) + Upsilon33*complexconjugate(ZUR33)))', 
+	 value = '-1*complex(0,1)*ZH21*(complexconjugate(ZER21)*(Upsilon11*complexconjugate(ZUR31) + Upsilon12*complexconjugate(ZUR32) + Upsilon13*complexconjugate(ZUR33)) + complexconjugate(ZER22)*(Upsilon21*complexconjugate(ZUR31) + Upsilon22*complexconjugate(ZUR32) + Upsilon23*complexconjugate(ZUR33)) + complexconjugate(ZER23)*(Upsilon31*complexconjugate(ZUR31) + Upsilon32*complexconjugate(ZUR32) + Upsilon33*complexconjugate(ZUR33)))', 
 	 order = {'QED':1} ) 
  
 GC_470 = Coupling(name = 'GC_470',
@@ -1884,7 +1884,7 @@ GC_470 = Coupling(name = 'GC_470',
 	 order = {'QED':1} ) 
  
 GC_471 = Coupling(name = 'GC_471',
-	 value = '-1*complex(0,1)*ZH11*(complexconjugate(ZER31)*(Upsilon11*complexconjugate(ZUR11) + Upsilon21*complexconjugate(ZUR12) + Upsilon31*complexconjugate(ZUR13)) + complexconjugate(ZER32)*(Upsilon12*complexconjugate(ZUR11) + Upsilon22*complexconjugate(ZUR12) + Upsilon32*complexconjugate(ZUR13)) + complexconjugate(ZER33)*(Upsilon13*complexconjugate(ZUR11) + Upsilon23*complexconjugate(ZUR12) + Upsilon33*complexconjugate(ZUR13)))', 
+	 value = '-1*complex(0,1)*ZH11*(complexconjugate(ZER31)*(Upsilon11*complexconjugate(ZUR11) + Upsilon12*complexconjugate(ZUR12) + Upsilon13*complexconjugate(ZUR13)) + complexconjugate(ZER32)*(Upsilon21*complexconjugate(ZUR11) + Upsilon22*complexconjugate(ZUR12) + Upsilon23*complexconjugate(ZUR13)) + complexconjugate(ZER33)*(Upsilon31*complexconjugate(ZUR11) + Upsilon32*complexconjugate(ZUR12) + Upsilon33*complexconjugate(ZUR13)))', 
 	 order = {'QED':1} ) 
  
 GC_472 = Coupling(name = 'GC_472',
@@ -1892,7 +1892,7 @@ GC_472 = Coupling(name = 'GC_472',
 	 order = {'QED':1} ) 
  
 GC_473 = Coupling(name = 'GC_473',
-	 value = '-1*complex(0,1)*ZH21*(complexconjugate(ZER31)*(Upsilon11*complexconjugate(ZUR11) + Upsilon21*complexconjugate(ZUR12) + Upsilon31*complexconjugate(ZUR13)) + complexconjugate(ZER32)*(Upsilon12*complexconjugate(ZUR11) + Upsilon22*complexconjugate(ZUR12) + Upsilon32*complexconjugate(ZUR13)) + complexconjugate(ZER33)*(Upsilon13*complexconjugate(ZUR11) + Upsilon23*complexconjugate(ZUR12) + Upsilon33*complexconjugate(ZUR13)))', 
+	 value = '-1*complex(0,1)*ZH21*(complexconjugate(ZER31)*(Upsilon11*complexconjugate(ZUR11) + Upsilon12*complexconjugate(ZUR12) + Upsilon13*complexconjugate(ZUR13)) + complexconjugate(ZER32)*(Upsilon21*complexconjugate(ZUR11) + Upsilon22*complexconjugate(ZUR12) + Upsilon23*complexconjugate(ZUR13)) + complexconjugate(ZER33)*(Upsilon31*complexconjugate(ZUR11) + Upsilon32*complexconjugate(ZUR12) + Upsilon33*complexconjugate(ZUR13)))', 
 	 order = {'QED':1} ) 
  
 GC_474 = Coupling(name = 'GC_474',
@@ -1900,7 +1900,7 @@ GC_474 = Coupling(name = 'GC_474',
 	 order = {'QED':1} ) 
  
 GC_475 = Coupling(name = 'GC_475',
-	 value = '-1*complex(0,1)*ZH11*(complexconjugate(ZER31)*(Upsilon11*complexconjugate(ZUR21) + Upsilon21*complexconjugate(ZUR22) + Upsilon31*complexconjugate(ZUR23)) + complexconjugate(ZER32)*(Upsilon12*complexconjugate(ZUR21) + Upsilon22*complexconjugate(ZUR22) + Upsilon32*complexconjugate(ZUR23)) + complexconjugate(ZER33)*(Upsilon13*complexconjugate(ZUR21) + Upsilon23*complexconjugate(ZUR22) + Upsilon33*complexconjugate(ZUR23)))', 
+	 value = '-1*complex(0,1)*ZH11*(complexconjugate(ZER31)*(Upsilon11*complexconjugate(ZUR21) + Upsilon12*complexconjugate(ZUR22) + Upsilon13*complexconjugate(ZUR23)) + complexconjugate(ZER32)*(Upsilon21*complexconjugate(ZUR21) + Upsilon22*complexconjugate(ZUR22) + Upsilon23*complexconjugate(ZUR23)) + complexconjugate(ZER33)*(Upsilon31*complexconjugate(ZUR21) + Upsilon32*complexconjugate(ZUR22) + Upsilon33*complexconjugate(ZUR23)))', 
 	 order = {'QED':1} ) 
  
 GC_476 = Coupling(name = 'GC_476',
@@ -1908,7 +1908,7 @@ GC_476 = Coupling(name = 'GC_476',
 	 order = {'QED':1} ) 
  
 GC_477 = Coupling(name = 'GC_477',
-	 value = '-1*complex(0,1)*ZH21*(complexconjugate(ZER31)*(Upsilon11*complexconjugate(ZUR21) + Upsilon21*complexconjugate(ZUR22) + Upsilon31*complexconjugate(ZUR23)) + complexconjugate(ZER32)*(Upsilon12*complexconjugate(ZUR21) + Upsilon22*complexconjugate(ZUR22) + Upsilon32*complexconjugate(ZUR23)) + complexconjugate(ZER33)*(Upsilon13*complexconjugate(ZUR21) + Upsilon23*complexconjugate(ZUR22) + Upsilon33*complexconjugate(ZUR23)))', 
+	 value = '-1*complex(0,1)*ZH21*(complexconjugate(ZER31)*(Upsilon11*complexconjugate(ZUR21) + Upsilon12*complexconjugate(ZUR22) + Upsilon13*complexconjugate(ZUR23)) + complexconjugate(ZER32)*(Upsilon21*complexconjugate(ZUR21) + Upsilon22*complexconjugate(ZUR22) + Upsilon23*complexconjugate(ZUR23)) + complexconjugate(ZER33)*(Upsilon31*complexconjugate(ZUR21) + Upsilon32*complexconjugate(ZUR22) + Upsilon33*complexconjugate(ZUR23)))', 
 	 order = {'QED':1} ) 
  
 GC_478 = Coupling(name = 'GC_478',
@@ -1916,7 +1916,7 @@ GC_478 = Coupling(name = 'GC_478',
 	 order = {'QED':1} ) 
  
 GC_479 = Coupling(name = 'GC_479',
-	 value = '-1*complex(0,1)*ZH11*(complexconjugate(ZER31)*(Upsilon11*complexconjugate(ZUR31) + Upsilon21*complexconjugate(ZUR32) + Upsilon31*complexconjugate(ZUR33)) + complexconjugate(ZER32)*(Upsilon12*complexconjugate(ZUR31) + Upsilon22*complexconjugate(ZUR32) + Upsilon32*complexconjugate(ZUR33)) + complexconjugate(ZER33)*(Upsilon13*complexconjugate(ZUR31) + Upsilon23*complexconjugate(ZUR32) + Upsilon33*complexconjugate(ZUR33)))', 
+	 value = '-1*complex(0,1)*ZH11*(complexconjugate(ZER31)*(Upsilon11*complexconjugate(ZUR31) + Upsilon12*complexconjugate(ZUR32) + Upsilon13*complexconjugate(ZUR33)) + complexconjugate(ZER32)*(Upsilon21*complexconjugate(ZUR31) + Upsilon22*complexconjugate(ZUR32) + Upsilon23*complexconjugate(ZUR33)) + complexconjugate(ZER33)*(Upsilon31*complexconjugate(ZUR31) + Upsilon32*complexconjugate(ZUR32) + Upsilon33*complexconjugate(ZUR33)))', 
 	 order = {'QED':1} ) 
  
 GC_480 = Coupling(name = 'GC_480',
@@ -1924,7 +1924,7 @@ GC_480 = Coupling(name = 'GC_480',
 	 order = {'QED':1} ) 
  
 GC_481 = Coupling(name = 'GC_481',
-	 value = '-1*complex(0,1)*ZH21*(complexconjugate(ZER31)*(Upsilon11*complexconjugate(ZUR31) + Upsilon21*complexconjugate(ZUR32) + Upsilon31*complexconjugate(ZUR33)) + complexconjugate(ZER32)*(Upsilon12*complexconjugate(ZUR31) + Upsilon22*complexconjugate(ZUR32) + Upsilon32*complexconjugate(ZUR33)) + complexconjugate(ZER33)*(Upsilon13*complexconjugate(ZUR31) + Upsilon23*complexconjugate(ZUR32) + Upsilon33*complexconjugate(ZUR33)))', 
+	 value = '-1*complex(0,1)*ZH21*(complexconjugate(ZER31)*(Upsilon11*complexconjugate(ZUR31) + Upsilon12*complexconjugate(ZUR32) + Upsilon13*complexconjugate(ZUR33)) + complexconjugate(ZER32)*(Upsilon21*complexconjugate(ZUR31) + Upsilon22*complexconjugate(ZUR32) + Upsilon23*complexconjugate(ZUR33)) + complexconjugate(ZER33)*(Upsilon31*complexconjugate(ZUR31) + Upsilon32*complexconjugate(ZUR32) + Upsilon33*complexconjugate(ZUR33)))', 
 	 order = {'QED':1} ) 
  
 GC_482 = Coupling(name = 'GC_482',
