@@ -12,23 +12,10 @@ Couplings = pd.read_csv('/home/felipe/JoaoPino/1-LQsCollider_project/Data/Coupli
 Flavour = pd.read_csv('/home/felipe/JoaoPino/1-LQsCollider_project/Data/Flavour_obs.csv', sep=',')
 SM_pars = pd.read_csv('/home/felipe/JoaoPino/1-LQsCollider_project/Data/SM_pars.csv', sep=',')
 
-RK_old = False
-RK_new = True
-
-if RK_old = True:
-    #Based on the old RK result
-    Good_Rks = Flavour.loc[(Flavour['RK'] < (0.846+0.042+0.013)) & (Flavour['RK'] > (0.846-0.039-0.012))]
-    indices = list(Good_Rks.index)
-    
-if RK_new = True:
-    #Based on the new RK result
-    Good_Rks = Flavour.loc[(Flavour['RK'] < (0.949+0.042+0.022)) & (Flavour['RK'] > (0.846-0.041-0.022))]
-    indices = list(Good_Rks.index)
-
-Angles_new = Angles.iloc[indices]
-Couplings_new = Couplings.iloc[indices]
-Flavour_new = Flavour.iloc[indices]
-SM_pars_new = SM_pars.iloc[indices]
+Angles_new = Angles
+Couplings_new = Couplings
+Flavour_new = Flavour
+SM_pars_new = SM_pars
 
 def Neutrino_oneloop(i, j, Omega, Theta, VCKM, v, a1, md, mS1, mS2):
     
