@@ -13,9 +13,7 @@ Note: For the card generation, data from https://github.com/Mrazi09/Leptoquark-p
 
 **Data_MadGraph** Some numerical data used for the simulations and plots
 
-**Plots** Folder with various plots, as well as the associated python script (as well as a ```jupyter``` notebook) to draw them
-
-**EVO** Folder with main scripts to run the genetic algorithm. One can opt between accuracy (loss function set to binary cross-entropy) or asimov mode (loss function is defined as the inverse of the Asimov estimate). To jump between the different modes, one must alter the flags inside ```train_signal2.py```. A notebook named ```process_imbalanced.ipynb``` which picks up the ```.csv``` datasets and balances the classes and then saves it in the ```.npz``` format, which is used in the python scripts. **TO ADD**. Notebook that uses the networks to compute the significance.
+**Plots** Folder with various plots, as well as the associated ```jupyter``` notebook to draw them
 
 **Benchmark_cards** Folder with the benchmark cards for different masses of the lightest leptoquark.
 
