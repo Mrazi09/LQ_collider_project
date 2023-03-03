@@ -15,10 +15,7 @@ Codes and data for the LQ collider research project, which corresponds to the pa
 
 **Benchmark_cards** Folder with the benchmark cards for different masses of the lightest leptoquark.
 
-**Gaussian_fits** Guassian fits to the log probability histograms to every observable studied in this work. Also includes a ```jupyter``` notebook that performs the computations named ```Pvalue_root.ipynb``` (inside the Code sub-folder). Requires .csv with the histograms, which is inside this repository in the Data_MadGraph/CSV_Data folder 
-
-**Gaussian_fits** Guassian fits to the log probability histograms for observables that offer a separation greater than $5\sigma$
-
+**Gaussian_fits** ```jupyter``` notebook for guassian fits to the log probability histograms, named ```Pvalue_root.ipynb```. Also contain plots for the 1.5 TeV benchmark, for the $p_T(\mu^-)$ and $M(\mu^+,\mu^-)$ distributions. Can be easily adapated for the other observables, one just needs to change the name of variable ```Obs``` to the desired one. Requires the data that is inside the Data_MadGraph folder of this repo
 
 To download, click on ```<> Code``` on top of the page and select ```Download ZIP```. One can also use git to clone the repo to your local machine as ```git clone https://github.com/Mrazi09/LQ_collider_project.git``` in the terminal.
 
