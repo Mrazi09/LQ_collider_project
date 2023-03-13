@@ -19,4 +19,4 @@ Codes and data for the LQ collider research project, which corresponds to the pa
 
 To download, click on ```<> Code``` on top of the page and select ```Download ZIP```. One can also use git to clone the repo to your local machine as ```git clone https://github.com/Mrazi09/LQ_collider_project.git``` in the terminal. The later option requires ```git``` to be installed in our system
 
-For additional information or questions, feel free to contact me by email (jpedropino@ua.pt or johnppg5@gmail.com)
+For additional information or questions, feel free to contact me by email (jpedropino@ua.pt, joao.goncalves@hep.lu.se or johnppg5@gmail.com)
