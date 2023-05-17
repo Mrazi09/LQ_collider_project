@@ -17,6 +17,6 @@ Codes and data for the LQ collider research project, which corresponds to the pa
 
 **Gaussian_fits** ```jupyter``` notebook for guassian fits to the log probability histograms, named ```Pvalue_root.ipynb```. Also contain plots for the 1.5 TeV benchmark, for the $p_T(\mu^-)$ and $M(\mu^+,\mu^-)$ distributions. Can be easily adapated for the other observables, one just needs to change the name of variable ```Obs``` to the desired one. Requires the data that is inside the Data_MadGraph folder of this repo.
 
-To download, click on ```<> Code``` on top of the page and select ```Download ZIP```. One can also use git to clone the repo to your local machine as ```git clone https://github.com/Mrazi09/LQ_collider_project.git``` in the terminal. The later option requires ```git``` to be installed in our system. Alternatively, to download a single folder, one can use ```Download ZIP```. For details, see https://github.com/MinhasKamal/DownGit/
+To download, click on ```<> Code``` on top of the page and select ```Download ZIP```. One can also use git to clone the repo to your local machine as ```git clone https://github.com/Mrazi09/LQ_collider_project.git``` in the terminal. The later option requires ```git``` to be installed in our system. Alternatively, to download a single folder, one can use ```DownGit```. For details, see https://github.com/MinhasKamal/DownGit/
 
 For additional information or questions, feel free to contact me by email (jpedropino@ua.pt, joao.goncalves@hep.lu.se or johnppg5@gmail.com)
