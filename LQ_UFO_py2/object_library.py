@@ -7,12 +7,11 @@
 ##
 ##
 
-from __future__ import absolute_import
 import cmath
 
 
 class UFOBaseClass(object):
-    u"""The class from which all FeynRules classes are derived."""
+    """The class from which all FeynRules classes are derived."""
 
     require_args = []
 
@@ -32,25 +31,25 @@ class UFOBaseClass(object):
         setattr(self, name, value)
         
     def get_all(self):
-        u"""Return a dictionary containing all the information of the object"""
+        """Return a dictionary containing all the information of the object"""
         return self.__dict__
 
     def __str__(self):
         return self.name
 
     def nice_string(self):
-        u""" return string with the full information """
-        return u'\n'.join([u'%s \t: %s' %(name, value) for name, value in self.__dict__.items()])
+        """ return string with the full information """
+        return '\n'.join(['%s \t: %s' %(name, value) for name, value in self.__dict__.items()])
 
     def __repr__(self):
         replacements = [
-            (u'+',u'__plus__'),
-            (u'-',u'__minus__'),
-            (u'@',u'__at__'),
-            (u'!',u'__exclam__'),
-            (u'?',u'__quest__'),
-            (u'*',u'__star__'),
-            (u'~',u'__tilde__')
+            ('+','__plus__'),
+            ('-','__minus__'),
+            ('@','__at__'),
+            ('!','__exclam__'),
+            ('?','__quest__'),
+            ('*','__star__'),
+            ('~','__tilde__')
             ]
         text = self.name
         for orig,sub in replacements:
@@ -64,11 +63,11 @@ all_particles = []
     
 
 class Particle(UFOBaseClass):
-    u"""A standard Particle"""
+    """A standard Particle"""
 
-    require_args=[u'pdg_code', u'name', u'antiname', u'spin', u'color', u'mass', u'width', u'texname', u'antitexname', u'charge']
+    require_args=['pdg_code', 'name', 'antiname', 'spin', 'color', 'mass', 'width', 'texname', 'antitexname', 'charge']
 
-    require_args_all = [u'pdg_code', u'name', u'antiname', u'spin', u'color', u'mass', u'width', u'texname', u'antitexname', u'charge', u'line', u'propagating', u'goldstoneboson']
+    require_args_all = ['pdg_code', 'name', 'antiname', 'spin', 'color', 'mass', 'width', 'texname', 'antitexname', 'charge', 'line', 'propagating', 'goldstoneboson']
 
     def __init__(self, pdg_code, name, antiname, spin, color, mass, width, texname,
                  antitexname, charge , line=None, propagating=True, goldstoneboson=False, **options):
@@ -94,7 +93,7 @@ class Particle(UFOBaseClass):
 
 
     def find_line_type(self):
-        u""" find how we draw a line if not defined
+        """ find how we draw a line if not defined
         valid output: dashed/straight/wavy/curly/double/swavy/scurly
         """
         
@@ -103,30 +102,30 @@ class Particle(UFOBaseClass):
         
         #use default
         if spin == 1:
-            return u'dashed'
+            return 'dashed'
         elif spin == 2:
             if not self.selfconjugate:
-                return u'straight'
+                return 'straight'
             elif color == 1:
-                return u'swavy'
+                return 'swavy'
             else:
-                return u'scurly'
+                return 'scurly'
         elif spin == 3:
             if color == 1:
-                return u'wavy'
+                return 'wavy'
             
             else:
-                return u'curly'
+                return 'curly'
         elif spin == 5:
-            return u'double'
+            return 'double'
         elif spin == -1:
-            return u'dotted'
+            return 'dotted'
         else:
-            return u'dashed' # not supported yet
+            return 'dashed' # not supported yet
 
     def anti(self):
         if self.selfconjugate:
-            raise Exception(u'%s has no anti particle.' % self.name) 
+            raise Exception('%s has no anti particle.' % self.name) 
         outdic = {}
         for k,v in self.__dict__.items():
             if k not in self.require_args_all:                
@@ -145,7 +144,7 @@ all_parameters = []
 
 class Parameter(UFOBaseClass):
 
-    require_args=[u'name', u'nature', u'type', u'value', u'texname']
+    require_args=['name', 'nature', 'type', 'value', 'texname']
 
     def __init__(self, name, nature, type, value, texname, lhablock=None, lhacode=None):
 
@@ -158,8 +157,8 @@ class Parameter(UFOBaseClass):
         global all_parameters
         all_parameters.append(self)
 
-        if (lhablock is None or lhacode is None)  and nature == u'external':
-            raise Exception(u'Need LHA information for external parameter "%s".' % name)
+        if (lhablock is None or lhacode is None)  and nature == 'external':
+            raise Exception('Need LHA information for external parameter "%s".' % name)
         self.lhablock = lhablock
         self.lhacode = lhacode
 
@@ -167,7 +166,7 @@ all_vertices = []
 
 class Vertex(UFOBaseClass):
 
-    require_args=[u'name', u'particles', u'color', u'lorentz', u'couplings']
+    require_args=['name', 'particles', 'color', 'lorentz', 'couplings']
 
     def __init__(self, name, particles, color, lorentz, couplings, **opt):
  
@@ -184,7 +183,7 @@ all_couplings = []
 
 class Coupling(UFOBaseClass):
 
-    require_args=[u'name', u'value', u'order']
+    require_args=['name', 'value', 'order']
 
     def __init__(self, name, value, order, **opt):
 
@@ -199,9 +198,9 @@ all_lorentz = []
 
 class Lorentz(UFOBaseClass):
 
-    require_args=[u'name',u'spins',u'structure']
+    require_args=['name','spins','structure']
     
-    def __init__(self, name, spins, structure=u'external', **opt):
+    def __init__(self, name, spins, structure='external', **opt):
         args = (name, spins, structure)
         UFOBaseClass.__init__(self, *args, **opt)
 
@@ -225,7 +224,7 @@ class Function(object):
     def __call__(self, *opt):
 
         for i, arg in enumerate(self.arguments):
-            exec(u'%s = %s' % (arg, opt[i] ))
+            exec('%s = %s' % (arg, opt[i] ))
 
         return eval(self.expr)
 
