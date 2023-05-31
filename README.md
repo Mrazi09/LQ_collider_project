@@ -1,4 +1,4 @@
-# Exploring mixed lepton-quark interactions in non-resonant leptoquark production at the LHC
+# LQ_collider_project
 
 Codes and data for the LQ collider research project, which corresponds to the paper: "Exploring mixed lepton-quark interactions in non-resonant leptoquark production at the LHC" by myself (João Pedro Pino Gonçalves) and collaborators (Werner Porod, António Morais, António Onofre and Roman Pasechnik). arXiv:23XX.XXXXX 
 
