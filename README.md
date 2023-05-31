@@ -1,4 +1,5 @@
-# LQ_collider_project
+# Exploring mixed lepton-quark interactions in non-resonant leptoquark production at the LHC
+
 Codes and data for the LQ collider research project, which corresponds to the paper: "Exploring mixed lepton-quark interactions in non-resonant leptoquark production at the LHC" by myself (João Pedro Pino Gonçalves) and collaborators (Werner Porod, António Morais, António Onofre and Roman Pasechnik). arXiv:23XX.XXXXX 
 
 **LQ_UFO_py2** Contains the ```UFO``` files, as well as an example parameter card (```restrict_default.dat```) to run Monte Carlo simulations in MadGraph. ```python2``` version
