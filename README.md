@@ -21,7 +21,7 @@ Codes and data for the LQ collider research project, which corresponds to the pa
 **Simulation notes** The events were generated in MG5_aMC_v3_4_1 (```python3```). It was also tested in MG5_aMC_v2_8_1 (```python3```), MG5_aMC_v2_7_2 (```python3```), MG5_aMC_v2_7_3 (```python3```) and MG5_aMC_v2_7_0 (```python2```). All of them gave identical results.
 
 
-To download this repo, click on ```<> Code``` on top of the page and select ```Download ZIP```. One can also use git to clone the repo to your local machine as ```git clone https://github.com/Mrazi09/LQ_collider_project.git``` in the terminal. The later option requires ```git``` to be installed in our system. Alternatively, to download a single folder, one can use ```DownGit```. For details, see https://github.com/MinhasKamal/DownGit/
+To download this repo, click on ```<> Code``` on top of the page and select ```Download ZIP```. One can also use git to clone the repo to your local machine as ```git clone https://github.com/Mrazi09/LQ_collider_project.git``` in the terminal. The later option requires ```git``` to be installed in your system. Alternatively, to download a single folder, one can use ```DownGit```. For details, see https://github.com/MinhasKamal/DownGit/
 
 
 
